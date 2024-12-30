@@ -1,0 +1,42 @@
+<div class="col-8 offset-2">
+  <div class="card">
+    <div class="card-header bg-primary text-white">
+      <p class="text-center">
+        <%= image_tag("login/login-logo.svg", class: "img-fluid", alt: "login-logo.svg") %>
+      </p>
+      <br/>
+      <span class="float-end mt-3">
+        <%= image_tag("login/cgil-logo.svg", class: "img-fluid", alt: "cgil-logo.svg") %>
+      </span>
+    </div>
+    <div class="card-body bg-white border-primary">
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="input-group mb-1">
+          <span class="input-group-text input-group-text-fixed bg-primary text-white">
+            <i class="fa-solid fa-user"></i>
+            &nbsp;&nbsp;
+            <%= f.label :username %>
+          </span>
+          <%= f.text_field :username, class: 'form-control' %>
+        </div>
+        <div class="input-group mb-1">
+          <span class="input-group-text input-group-text-fixed bg-primary text-white">
+            <i class="fa-solid fa-key"></i>
+            &nbsp;&nbsp;
+            <%= f.label :password %>
+          </span>
+          <%= f.password_field :password, class: 'form-control' %>
+        </div>
+        <div class="d-grid mt-3">
+          <%= button_tag(type: "submit", class: "btn btn-primary") do %>
+            <strong>
+              <i class="fas fa-sign-in-alt"></i>&ensp;ACCEDI
+            </strong>
+          <% end %>
+        </div>
+      <% end %>
+      <br/>
+      <%# render "devise/shared/links" %>
+    </div>
+  </div>
+</div>

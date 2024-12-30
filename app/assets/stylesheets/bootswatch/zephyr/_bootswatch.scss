@@ -1,0 +1,333 @@
+// Zephyr 5.3.3
+// Bootswatch
+
+// Variables
+
+* {
+  font-family: "RobotoCondensed-Regular";
+
+  a {
+    text-decoration: none;
+  }
+}
+
+body {
+  padding-top: 3.4rem;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23ededed' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+// Mixins
+
+@mixin shadow($width: 4px) {
+  border-style: solid;
+  border-width: 0 1px $width 1px;
+}
+
+// Navbar
+
+.navbar {
+  max-height: 3rem;
+  font-size: $font-size-sm;
+  font-weight: 500;
+  border-bottom: 0.14rem solid $brown;
+  border-radius: 0.12rem;
+
+  .nav-item {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      border-radius: $border-radius;
+    }
+  }
+}
+
+.navbar-dark {
+  .navbar-nav {
+    .nav-link {
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      &.active {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}
+
+.navbar-light {
+  .navbar-nav {
+    .nav-link {
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.03);
+      }
+
+      &.active {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
+}
+
+.navbar-nav {
+  --bs-nav-link-padding-x: 0.5rem;
+}
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: $brown;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, $brown, $light-brown);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, $brown, $light-brown);
+}
+
+// Buttons
+
+.btn {
+  @include shadow();
+
+  &:not(.disabled):hover {
+    margin-top: 1px;
+    border-bottom-width: 3px;
+  }
+
+  &:not(.disabled):active {
+    margin-top: 2px;
+    border-bottom-width: 2px;
+    @include box-shadow(none);
+  }
+
+  @each $color, $value in $theme-colors {
+    &-#{$color} {
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: $value;
+      }
+
+      &,
+      &:not(.disabled):hover,
+      &:not(.disabled):active,
+      &:focus {
+        border-color: shade-color($value, 10%);
+      }
+    }
+  }
+}
+
+.btn-outline-secondary {
+  color: var(--bs-tertiary-color);
+}
+
+[class*="btn-outline"] {
+  border-top-width: 1px;
+}
+
+.btn-group-vertical {
+  .btn + .btn {
+    &:hover {
+      margin-top: -1px;
+      border-top-width: 1px;
+    }
+
+    &:active {
+      margin-top: -1px;
+      border-top-width: 2px;
+    }
+  }
+}
+
+.btn-outline-primary,
+.btn-outline-info,
+.btn-outline-secondary,
+.btn-outline-success,
+.btn-outline-warning,
+.btn-outline-danger,
+.btn-outline-light,
+.btn-outline-dark {
+  background-color: $gray-200;
+}
+
+// Tables
+
+.table {
+  font-size: $font-size-sm;
+  box-shadow: $box-shadow-lg;
+}
+
+thead th {
+  font-size: $font-size-sm;
+  text-transform: uppercase;
+}
+
+// Forms
+
+.input-group-text {
+  box-shadow: $box-shadow;
+}
+
+.input-group-text-fixed {
+  min-width: 12rem;
+}
+
+// Navs
+
+.nav-tabs {
+  font-weight: 500;
+
+  .nav-link {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-width: 0 0 1px;
+  }
+
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    box-shadow: inset 0 -2px 0 $primary;
+  }
+}
+
+.nav-pills {
+  font-weight: 500;
+}
+
+.pagination {
+  > li > a,
+  > li > span {
+    position: relative;
+    top: 0;
+    font-weight: 700;
+    color: $pagination-color;
+    text-transform: uppercase;
+    @include shadow();
+
+    &:hover,
+    &:focus {
+      top: 1px;
+      text-decoration: none;
+      border-bottom-width: 3px;
+    }
+
+    &:active {
+      top: 2px;
+      border-bottom-width: 2px;
+    }
+  }
+
+  > .disabled > a,
+  > .disabled > span {
+    &:hover {
+      top: 0;
+      @include shadow();
+    }
+
+    &:active {
+      top: 0;
+      @include shadow();
+    }
+  }
+}
+
+.pager {
+  > li > a,
+  > li > span,
+  > .disabled > a,
+  > .disabled > span {
+    &,
+    &:hover,
+    &:active {
+      border-right-width: 2px;
+      border-left-width: 2px;
+    }
+  }
+}
+
+// Indicators
+
+.btn-close {
+  text-decoration: none;
+  opacity: 0.4;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}
+
+.breadcrumb {
+  font-size: $font-size-sm;
+  font-weight: 500;
+  border: 1px solid var(--bs-secondary-bg);
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+
+  &-item {
+    padding: 1rem 0.5rem 1rem 0;
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  padding-right: 1rem;
+}
+
+// Indicators
+
+.alert {
+  .btn-close {
+    color: inherit;
+  }
+}
+
+.badge {
+  &.bg-secondary,
+  &.bg-light {
+    color: $gray-900;
+  }
+}
+
+// Containers
+
+.list-group-item,
+.card {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    color: inherit;
+  }
+}
+
+.list-group {
+  box-shadow: $box-shadow;
+}
+
+.card {
+  box-shadow: $box-shadow;
+}
+
+.modal-footer {
+  background-color: var(--bs-tertiary-bg);
+}
+
+.modal-content {
+  box-shadow: $box-shadow;
+}
+
+.bg-gradient {
+  background: linear-gradient(to right, $brown, $light-brown);
+}

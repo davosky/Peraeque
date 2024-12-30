@@ -1,0 +1,23 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  username: peraeque
+  password: Dfr368qE
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+
+development:
+  <<: *default
+  database: peraeque_development
+
+test:
+  <<: *default
+  database: peraeque_test
+
+production:
+  <<: *default
+  database: peraeque_production
+  username: peraeque
+  password: <%= ENV["PERAEQUE_DATABASE_PASSWORD"] %>

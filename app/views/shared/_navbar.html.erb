@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg bg-primary fixed-top gradient-custom shadow" data-bs-theme="dark">
+  <div class="container">
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <%= image_tag("navbar/navbar-logo.svg", class: "img-fluid", alt: "navbar-logo") %>
+    <% end %>
+    &emsp;
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto">
+      </ul>
+      <ul class="navbar-nav ms-auto">
+        <li>&emsp;&emsp;</li>
+        <li class="nav-item">
+          <%= link_to edit_user_registration_path, class: "nav-link" do %>
+            <%= full_user %>
+            &emsp;
+          <% end %>
+        </li>
+        <li class="nav-item dropstart">
+          <a class="nav-link dropdown nav-link-main-navbar" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+          </a>
+          <div class="dropdown-menu">
+            <% if current_user.admin? %>
+              <%= link_to rails_admin_path, class: "dropdown-item" do %>
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                &nbsp;
+                Amministrazione
+              <% end %>
+            <% end %>
+            <%= link_to home_credits_path, method: :get, class: "dropdown-item" do %>
+              <i class="fa-solid fa-user-gear"></i>
+              &nbsp;
+              Crediti
+            <% end %>
+            <%= link_to destroy_user_session_path, method: :get, class: "dropdown-item" do %>
+              <i class="fa-solid fa-door-open"></i>
+              &nbsp;
+              Esci
+            <% end %>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
