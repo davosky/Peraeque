@@ -13,6 +13,8 @@ it:
       user:
         username: Nome Utente
         password: Password
+        password_confirmation: Conferma Password
+        current_password: Password corrente
         email: E-Mail
         first_name: Nome
         last_name: Cognome
