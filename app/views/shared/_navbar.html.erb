@@ -6,6 +6,19 @@
     &emsp;
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav me-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown nav-link-main-navbar" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-calendar-days"></i>
+            &nbsp;Situazione Mensile
+          </a>
+          <div class="dropdown-menu">
+            <%= link_to home_jan_path, class: "dropdown-item" do %>
+              <i class="fa-solid fa-calendar-day"></i>
+              &nbsp;
+              Gennaio
+            <% end %>
+          </div>
+        </li>
       </ul>
       <ul class="navbar-nav ms-auto">
         <li>&emsp;&emsp;</li>

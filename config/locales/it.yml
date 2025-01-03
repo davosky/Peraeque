@@ -9,6 +9,7 @@ it:
         previous: Precedente
     models:
       user: Utente
+      regional: Regionale
     attributes:
       user:
         username: Nome Utente
@@ -34,6 +35,46 @@ it:
         sex: Sesso
         created_at: Creato Il
         updated_at: Aggiornato il
+      regional:
+        year: Anno
+        month: Mese
+        region: Regione
+        regional: Totale Regionale
+        gorizia: Gorizia
+        pordenone: Pordenone
+        trieste: Trieste
+        udine: Udine
+        filcams: FILCAMS
+        filctem: FILCTEM
+        fillea: FILLEA
+        filt: FILT
+        fiom: FIOM
+        fisac: FISAC
+        flai: FLAI
+        flc: FLC
+        fp: FP
+        nidil: NIDIL
+        slc: SLC
+        spi: SPI
+        men: Uomini
+        women: Donne
+        young: Giovani
+        thirty: Trentenni
+        forty: Quarantenni
+        fifty: Cinquantenni
+        sixty: Sessantenni
+        seventy: Settantenni
+        eighty: Ottantenni
+        highlander: Highlander
+        delega: Delega
+        brevimanu: BreviManu
+        ordinaria: Ordinaria
+        ordinariace: Ordinaria Cassa Edile
+        naspi: NASPI
+        dsagricola: DS Agricola
+        delagatesoro: Delega Tesoro
+        concomitante: Concomitante
+        concomitantespianno: Concomitante SPI Anno
     errors:
       messages:
         record_invalid: "Validazione fallita: %{errors}"

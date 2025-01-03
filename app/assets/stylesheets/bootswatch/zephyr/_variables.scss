@@ -53,8 +53,8 @@ $headings-color: var(--bs-primary-color) !default;
 $font-family-sans-serif: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
   Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$font-size-base: 1.1rem !default; // Assumes the browser default, typically `16px`
-$font-size-sm: $font-size-base * 0.875 !default;
+$font-size-base: 1.05rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm: $font-size-base * 0.82 !default;
 
 @font-face {
   font-family: "RobotoCondensed-Regular";
@@ -75,8 +75,9 @@ $font-size-sm: $font-size-base * 0.875 !default;
 
 // Components
 
-$box-shadow: 3px 3px 6px rgba($black, 0.4) !default;
-$box-shadow-lg: 0 1px 3px 0 rgba(0, 0, 0, 0.5), 0 1px 2px 0 rgba(0, 0, 0, 0.5) !default;
+$box-shadow: 3px 3px 6px rgba(153, 153, 153, 0.5) !default;
+$box-shadow-lg: 0 1px 3px 0 rgba(153, 153, 153, 0.5),
+  0 1px 2px 0 rgba(153, 153, 153, 0.5) !default;
 
 // Tables
 
