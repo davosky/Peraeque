@@ -4,9 +4,11 @@
       <%= image_tag("icon/jan-icon.svg", class: "img-fluid", alt: "jan-icon.svg") %>
       &emsp; Gennaio
       &emsp;
-      <%= image_tag("main/fvg-logo", class: "img-fluid", alt: "jan-icon.svg") %>
+      <%= image_tag("main/fvg-logo.svg", size: "32x32", class: "img-fluid", alt: "jan-icon.svg") %>
       &nbsp;
-      Friuli Venezia Giulia
+      <span class="text-primary fs-5 fw-bold">
+        Friuli Venezia Giulia
+      </span>
     </span>
     <span class="float-end">
       <span class="text-primary">
@@ -46,7 +48,7 @@
     </p>
     <ul class="list-group list-group-horizontal bg-white">
       <li class="list-group-item border-white text-center">
-        <%= image_tag("main/gorizia-logo", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
+        <%= image_tag("main/gorizia-logo", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo.svg") %>
         Gorizia
         <br/>
         <span class="text-primary fs-6">
@@ -59,7 +61,7 @@
         &emsp;
       </li>
       <li class="list-group-item border-white text-center">
-        <%= image_tag("main/pordenone-logo", size: "42x42", class: "img-fluid mb-2", alt: "pordenone-logo") %>
+        <%= image_tag("main/pordenone-logo.svg", size: "42x42", class: "img-fluid mb-2", alt: "pordenone-logo.svg") %>
         Pordenone
         <br/>
         <span class="text-primary fs-6">
@@ -72,7 +74,7 @@
         &emsp;
       </li>
       <li class="list-group-item border-white text-center">
-        <%= image_tag("main/trieste-logo", size: "42x42", class: "img-fluid mb-2", alt: "trieste-logo") %>
+        <%= image_tag("main/trieste-logo.svg", size: "42x42", class: "img-fluid mb-2", alt: "trieste-logo.svg") %>
         Trieste
         <br/>
         <span class="text-primary fs-6">
@@ -85,7 +87,7 @@
         &emsp;
       </li>
       <li class="list-group-item border-white text-center">
-        <%= image_tag("main/udine-logo", size: "42x42", class: "img-fluid mb-2", alt: "udine-logo") %>
+        <%= image_tag("main/udine-logo.svg", size: "42x42", class: "img-fluid mb-2", alt: "udine-logo.svg") %>
         Udine
         <br/>
         <span class="text-primary fs-6">
@@ -106,7 +108,7 @@
     </p>
     <ul class="list-group list-group-horizontal bg-white">
       <li class="list-group-item border-white text-center">
-        <%= image_tag("main/gorizia-logo", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
+        <%= image_tag("main/gorizia-logo.svg", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo.svg") %>
         Gorizia
         <br/>
         <span class="text-primary fs-6">
@@ -119,7 +121,7 @@
         <%= growth_degrowth_territory("january", :gorizia) %>
       </li>
       <li class="list-group-item border-white text-center">
-        <%= image_tag("main/pordenone-logo", size: "42x42", class: "img-fluid mb-2", alt: "pordenone-logo") %>
+        <%= image_tag("main/pordenone-logo.svg", size: "42x42", class: "img-fluid mb-2", alt: "pordenone-logo.svg") %>
         Pordenone
         <br/>
         <span class="text-primary fs-6">
@@ -132,7 +134,7 @@
         <%= growth_degrowth_territory("january", :pordenone) %>
       </li>
       <li class="list-group-item border-white text-center">
-        <%= image_tag("main/trieste-logo", size: "42x42", class: "img-fluid mb-2", alt: "trieste-logo") %>
+        <%= image_tag("main/trieste-logo.svg", size: "42x42", class: "img-fluid mb-2", alt: "trieste-logo.svg") %>
         Trieste
         <br/>
         <span class="text-primary fs-6">
@@ -145,7 +147,7 @@
         <%= growth_degrowth_territory("january", :trieste) %>
       </li>
       <li class="list-group-item border-white text-center">
-        <%= image_tag("main/udine-logo", size: "42x42", class: "img-fluid mb-2", alt: "udine-logo") %>
+        <%= image_tag("main/udine-logo.svg", size: "42x42", class: "img-fluid mb-2", alt: "udine-logo.svg") %>
         Udine
         <br/>
         <span class="text-primary fs-6">
@@ -160,345 +162,297 @@
     </ul>
   </div>
 </div>
-<div class="row mt-4">
+<div class="row mt-3">
   <div class="col-6">
-    <ul class="list-group list-group-horizontal bg-white">
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/filcams", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        FILCAMS
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_previous_year_january&.filcams}".html_safe %>
-        </span>
-        <br/>
-        &emsp;
-      </li>
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/filctem", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        FILCTEM
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_previous_year_january&.filctem}".html_safe %>
-        </span>
-        <br/>
-        &emsp;
-      </li>
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/fillea", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        FILLEA
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_previous_year_january&.fillea}".html_safe %>
-        </span>
-        <br/>
-        &emsp;
-      </li>
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/filt", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        FILT
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_previous_year_january&.filt}".html_safe %>
-        </span>
-        <br/>
-        &emsp;
-      </li>
-    </ul>
+    <div class="divTable shadow pt-2">
+      <div class="divTableBody">
+        <div class="divTableRow">
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/filcams.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            FILCAMS
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_previous_year_january&.filcams}".html_safe %>
+            </span>
+            <br/>
+            &nbsp;
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/filctem.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            FILCTEM
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_previous_year_january&.filctem}".html_safe %>
+            </span>
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/fillea.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            FILLEA
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_previous_year_january&.fillea}".html_safe %>
+            </span>
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/filt.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            FILT
+            <span class="text-info">
+              <%= "#{@from_previous_year_january&.filt}".html_safe %>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="col-6">
-    <ul class="list-group list-group-horizontal bg-white">
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/filcams", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        FILCAMS
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_current_year_january&.filcams}".html_safe %>
-        </span>
-        <br/>
-        <%= growth_degrowth_category("january", :filcams) %>
-      </li>
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/filctem", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        FILCTEM
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_current_year_january&.filctem}".html_safe %>
-        </span>
-        <br/>
-        <%= growth_degrowth_category("january", :filctem) %>
-      </li>
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/fillea", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        FILLEA
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_current_year_january&.fillea}".html_safe %>
-        </span>
-        <br/>
-        <%= growth_degrowth_category("january", :fillea) %>
-      </li>
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/filt", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        FILT
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_current_year_january&.filt}".html_safe %>
-        </span>
-        <br/>
-        <%= growth_degrowth_category("january", :filt) %>
-      </li>
-    </ul>
+    <div class="divTable shadow pt-2">
+      <div class="divTableBody">
+        <div class="divTableRow">
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/filcams.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            FILCAMS
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_current_year_january&.filcams}".html_safe %>
+            </span>
+            <br/>
+            <%= growth_degrowth_category("january", :filcams) %>
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/filctem.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            FILCTEM
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_current_year_january&.filctem}".html_safe %>
+            </span>
+            <br/>
+            <%= growth_degrowth_category("january", :filctem) %>
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/fillea.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            FILLEA
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_current_year_january&.fillea}".html_safe %>
+            </span>
+            <br/>
+            <%= growth_degrowth_category("january", :fillea) %>
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/filt.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            FILT
+            <span class="text-info">
+              <%= "#{@from_current_year_january&.filt}".html_safe %>
+            </span>
+            <br/>
+            <%= growth_degrowth_category("january", :filt) %>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <div class="row mt-1">
   <div class="col-6">
-    <ul class="list-group list-group-horizontal bg-white">
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/fiom", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        FIOM
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_previous_year_january&.fiom}".html_safe %>
-        </span>
-        <br/>
-        &emsp;
-      </li>
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/fisac", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        FISAC
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_previous_year_january&.fisac}".html_safe %>
-        </span>
-        <br/>
-        &emsp;
-      </li>
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/flai", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        FLAI
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_previous_year_january&.flai}".html_safe %>
-        </span>
-        <br/>
-        &emsp;
-      </li>
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/flc", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        FLC
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_previous_year_january&.flc}".html_safe %>
-        </span>
-        <br/>
-        &emsp;
-      </li>
-    </ul>
+    <div class="divTable shadow pt-2">
+      <div class="divTableBody">
+        <div class="divTableRow">
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/fiom.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            FIOM
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_previous_year_january&.fiom}".html_safe %>
+            </span>
+            <br/>
+            &nbsp;
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/fisac.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            FISAC
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_previous_year_january&.fisac}".html_safe %>
+            </span>
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/flai.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            FLAI
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_previous_year_january&.flai}".html_safe %>
+            </span>
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/flc.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            FLC
+            <span class="text-info">
+              <%= "#{@from_previous_year_january&.flc}".html_safe %>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="col-6">
-    <ul class="list-group list-group-horizontal bg-white">
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/fiom", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        FIOM
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_current_year_january&.fiom}".html_safe %>
-        </span>
-        <br/>
-        <%= growth_degrowth_category("january", :fiom) %>
-      </li>
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/fisac", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        FISAC
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_current_year_january&.fisac}".html_safe %>
-        </span>
-        <br/>
-        <%= growth_degrowth_category("january", :fisac) %>
-      </li>
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/flai", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        FLAI
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_current_year_january&.flai}".html_safe %>
-        </span>
-        <br/>
-        <%= growth_degrowth_category("january", :flai) %>
-      </li>
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/flc", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        FLC
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_current_year_january&.flc}".html_safe %>
-        </span>
-        <br/>
-        <%= growth_degrowth_category("january", :flc) %>
-      </li>
-    </ul>
+    <div class="divTable shadow pt-2">
+      <div class="divTableBody">
+        <div class="divTableRow">
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/fiom.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            FIOM
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_current_year_january&.fiom}".html_safe %>
+            </span>
+            <br/>
+            <%= growth_degrowth_category("january", :fiom) %>
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/fisac.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            FISAC
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_current_year_january&.fisac}".html_safe %>
+            </span>
+            <br/>
+            <%= growth_degrowth_category("january", :fisac) %>
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/flai.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            FLAI
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_current_year_january&.flai}".html_safe %>
+            </span>
+            <br/>
+            <%= growth_degrowth_category("january", :flai) %>
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/flc.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            FLC
+            <span class="text-info">
+              <%= "#{@from_current_year_january&.flc}".html_safe %>
+            </span>
+            <br/>
+            <%= growth_degrowth_category("january", :flc) %>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-<div class="row mt-1">
+<div class="row mt-1 mb-5">
   <div class="col-6">
-    <ul class="list-group list-group-horizontal bg-white">
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/fp", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        FP
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_previous_year_january&.fp}".html_safe %>
-        </span>
-        <br/>
-        &emsp;
-      </li>
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/nidil", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        NIDIL
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_previous_year_january&.nidil}".html_safe %>
-        </span>
-        <br/>
-        &emsp;
-      </li>
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/slc", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        SLC
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_previous_year_january&.slc}".html_safe %>
-        </span>
-        <br/>
-        &emsp;
-      </li>
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/spi", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        SPI
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_previous_year_january&.spi}".html_safe %>
-        </span>
-        <br/>
-        &emsp;
-      </li>
-    </ul>
+    <div class="divTable shadow pt-2">
+      <div class="divTableBody">
+        <div class="divTableRow">
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/fp.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            FP
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_previous_year_january&.fp}".html_safe %>
+            </span>
+            <br/>
+            &nbsp;
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/nidil.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            NIDIL
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_previous_year_january&.nidil}".html_safe %>
+            </span>
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/slc.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            SLC
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_previous_year_january&.slc}".html_safe %>
+            </span>
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/spi.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            SPI
+            <span class="text-info">
+              <%= "#{@from_previous_year_january&.spi}".html_safe %>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="col-6">
-    <ul class="list-group list-group-horizontal bg-white">
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/fp", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        FP
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_current_year_january&.fp}".html_safe %>
-        </span>
-        <br/>
-        <%= growth_degrowth_category("january", :fp) %>
-      </li>
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/nidil", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        NIDIL
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_current_year_january&.nidil}".html_safe %>
-        </span>
-        <br/>
-        <%= growth_degrowth_category("january", :nidil) %>
-      </li>
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/slc", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        SLC
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_current_year_january&.slc}".html_safe %>
-        </span>
-        <br/>
-        <%= growth_degrowth_category("january", :slc) %>
-      </li>
-      <li class="list-group-item border-white text-center">
-        <%= image_tag("main/spi", size: "42x42", class: "img-fluid mb-2", alt: "gorizia-logo") %>
-        SPI
-        <br/>
-        <span class="text-primary fs-6">
-          <i class="fa-solid fa-users"></i>
-        </span>
-        <span class="text-info fs-4 fw-bolder">
-          <%= "#{@from_current_year_january&.spi}".html_safe %>
-        </span>
-        <br/>
-        <%= growth_degrowth_category("january", :spi) %>
-      </li>
-    </ul>
+    <div class="divTable shadow pt-2">
+      <div class="divTableBody">
+        <div class="divTableRow">
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/fp.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            FP
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_current_year_january&.fp}".html_safe %>
+            </span>
+            <br/>
+            <%= growth_degrowth_category("january", :fp) %>
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/nidil.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            NIDIL
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_current_year_january&.nidil}".html_safe %>
+            </span>
+            <br/>
+            <%= growth_degrowth_category("january", :nidil) %>
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/slc.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            SLC
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_current_year_january&.slc}".html_safe %>
+            </span>
+            <br/>
+            <%= growth_degrowth_category("january", :slc) %>
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            <%= image_tag("main/spi.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            &nbsp;
+            SPI
+            <span class="text-info">
+              <%= "#{@from_current_year_january&.spi}".html_safe %>
+            </span>
+            <br/>
+            <%= growth_degrowth_category("january", :spi) %>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
