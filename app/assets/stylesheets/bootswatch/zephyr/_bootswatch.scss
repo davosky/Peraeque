@@ -340,15 +340,20 @@ thead th {
 }
 .divTableRow {
   display: table-row;
+  border-bottom: solid 1px $gray-400;
 }
 .divTableHeading {
   display: table-header-group;
+}
+.divTableCell {
+  border-right: solid 1px $gray-400;
+  border-bottom: solid 1px $gray-400;
 }
 .divTableCell,
 .divTableHead {
   text-align: center;
   display: table-cell;
-  padding: 3px 10px;
+  padding: 7px 3px;
 }
 .divTableHeading {
   display: table-header-group;

@@ -162,25 +162,19 @@
     </ul>
   </div>
 </div>
-<div class="row mt-3">
+<div class="row mt-3 mb-5">
   <div class="col-6">
     <div class="divTable shadow pt-2">
       <div class="divTableBody">
         <div class="divTableRow">
           <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/filcams.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
             FILCAMS
             &nbsp;
             <span class="text-info">
               <%= "#{@from_previous_year_january&.filcams}".html_safe %>
             </span>
-            <br/>
-            &nbsp;
           </div>
           <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/filctem.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
             FILCTEM
             &nbsp;
             <span class="text-info">
@@ -188,106 +182,38 @@
             </span>
           </div>
           <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/fillea.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
             FILLEA
             &nbsp;
             <span class="text-info">
               <%= "#{@from_previous_year_january&.fillea}".html_safe %>
             </span>
           </div>
+        </div>
+        <div class="divTableRow">
           <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/filt.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
             FILT
+            &nbsp;
             <span class="text-info">
               <%= "#{@from_previous_year_january&.filt}".html_safe %>
             </span>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-6">
-    <div class="divTable shadow pt-2">
-      <div class="divTableBody">
-        <div class="divTableRow">
           <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/filcams.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
-            FILCAMS
-            &nbsp;
-            <span class="text-info">
-              <%= "#{@from_current_year_january&.filcams}".html_safe %>
-            </span>
-            <br/>
-            <%= growth_degrowth_category("january", :filcams) %>
-          </div>
-          <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/filctem.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
-            FILCTEM
-            &nbsp;
-            <span class="text-info">
-              <%= "#{@from_current_year_january&.filctem}".html_safe %>
-            </span>
-            <br/>
-            <%= growth_degrowth_category("january", :filctem) %>
-          </div>
-          <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/fillea.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
-            FILLEA
-            &nbsp;
-            <span class="text-info">
-              <%= "#{@from_current_year_january&.fillea}".html_safe %>
-            </span>
-            <br/>
-            <%= growth_degrowth_category("january", :fillea) %>
-          </div>
-          <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/filt.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
-            FILT
-            <span class="text-info">
-              <%= "#{@from_current_year_january&.filt}".html_safe %>
-            </span>
-            <br/>
-            <%= growth_degrowth_category("january", :filt) %>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row mt-1">
-  <div class="col-6">
-    <div class="divTable shadow pt-2">
-      <div class="divTableBody">
-        <div class="divTableRow">
-          <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/fiom.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
             FIOM
             &nbsp;
             <span class="text-info">
               <%= "#{@from_previous_year_january&.fiom}".html_safe %>
             </span>
-            <br/>
-            &nbsp;
           </div>
           <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/fisac.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
             FISAC
             &nbsp;
             <span class="text-info">
               <%= "#{@from_previous_year_january&.fisac}".html_safe %>
             </span>
           </div>
+        </div>
+        <div class="divTableRow">
           <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/flai.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
             FLAI
             &nbsp;
             <span class="text-info">
@@ -295,88 +221,22 @@
             </span>
           </div>
           <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/flc.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
             FLC
+            &nbsp;
             <span class="text-info">
               <%= "#{@from_previous_year_january&.flc}".html_safe %>
             </span>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-6">
-    <div class="divTable shadow pt-2">
-      <div class="divTableBody">
-        <div class="divTableRow">
           <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/fiom.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
-            FIOM
-            &nbsp;
-            <span class="text-info">
-              <%= "#{@from_current_year_january&.fiom}".html_safe %>
-            </span>
-            <br/>
-            <%= growth_degrowth_category("january", :fiom) %>
-          </div>
-          <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/fisac.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
-            FISAC
-            &nbsp;
-            <span class="text-info">
-              <%= "#{@from_current_year_january&.fisac}".html_safe %>
-            </span>
-            <br/>
-            <%= growth_degrowth_category("january", :fisac) %>
-          </div>
-          <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/flai.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
-            FLAI
-            &nbsp;
-            <span class="text-info">
-              <%= "#{@from_current_year_january&.flai}".html_safe %>
-            </span>
-            <br/>
-            <%= growth_degrowth_category("january", :flai) %>
-          </div>
-          <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/flc.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
-            FLC
-            <span class="text-info">
-              <%= "#{@from_current_year_january&.flc}".html_safe %>
-            </span>
-            <br/>
-            <%= growth_degrowth_category("january", :flc) %>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row mt-1 mb-5">
-  <div class="col-6">
-    <div class="divTable shadow pt-2">
-      <div class="divTableBody">
-        <div class="divTableRow">
-          <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/fp.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
             FP
             &nbsp;
             <span class="text-info">
               <%= "#{@from_previous_year_january&.fp}".html_safe %>
             </span>
-            <br/>
-            &nbsp;
           </div>
+        </div>
+        <div class="divTableRow">
           <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/nidil.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
             NIDIL
             &nbsp;
             <span class="text-info">
@@ -384,8 +244,6 @@
             </span>
           </div>
           <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/slc.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
             SLC
             &nbsp;
             <span class="text-info">
@@ -393,9 +251,8 @@
             </span>
           </div>
           <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/spi.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
             SPI
+            &nbsp;
             <span class="text-info">
               <%= "#{@from_previous_year_january&.spi}".html_safe %>
             </span>
@@ -409,46 +266,117 @@
       <div class="divTableBody">
         <div class="divTableRow">
           <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/fp.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
+            FILCAMS
             &nbsp;
+            <span class="text-info">
+              <%= "#{@from_current_year_january&.filcams}".html_safe %>
+            </span>
+            &nbsp;
+            <%= growth_degrowth_category("january", :filcams) %>
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            FILCTEM
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_current_year_january&.filctem}".html_safe %>
+            </span>
+            &nbsp;
+            <%= growth_degrowth_category("january", :filctem) %>
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            FILLEA
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_current_year_january&.fillea}".html_safe %>
+            </span>
+            &nbsp;
+            <%= growth_degrowth_category("january", :fillea) %>
+          </div>
+        </div>
+        <div class="divTableRow">
+          <div class="divTableCell text-primary fw-bold">
+            FILT
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_current_year_january&.filt}".html_safe %>
+            </span>
+            &nbsp;
+            <%= growth_degrowth_category("january", :filt) %>
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            FIOM
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_current_year_january&.fiom}".html_safe %>
+            </span>
+            &nbsp;
+            <%= growth_degrowth_category("january", :fiom) %>
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            FISAC
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_current_year_january&.fisac}".html_safe %>
+            </span>
+            &nbsp;
+            <%= growth_degrowth_category("january", :fisac) %>
+          </div>
+        </div>
+        <div class="divTableRow">
+          <div class="divTableCell text-primary fw-bold">
+            FLAI
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_current_year_january&.flai}".html_safe %>
+            </span>
+            &nbsp;
+            <%= growth_degrowth_category("january", :flai) %>
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            FLC
+            &nbsp;
+            <span class="text-info">
+              <%= "#{@from_current_year_january&.flc}".html_safe %>
+            </span>
+            &nbsp;
+            <%= growth_degrowth_category("january", :flc) %>
+          </div>
+          <div class="divTableCell text-primary fw-bold">
             FP
             &nbsp;
             <span class="text-info">
               <%= "#{@from_current_year_january&.fp}".html_safe %>
             </span>
-            <br/>
+            &nbsp;
             <%= growth_degrowth_category("january", :fp) %>
           </div>
+        </div>
+        <div class="divTableRow">
           <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/nidil.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
             NIDIL
             &nbsp;
             <span class="text-info">
               <%= "#{@from_current_year_january&.nidil}".html_safe %>
             </span>
-            <br/>
+            &nbsp;
             <%= growth_degrowth_category("january", :nidil) %>
           </div>
           <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/slc.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
             SLC
             &nbsp;
             <span class="text-info">
               <%= "#{@from_current_year_january&.slc}".html_safe %>
             </span>
-            <br/>
+            &nbsp;
             <%= growth_degrowth_category("january", :slc) %>
           </div>
           <div class="divTableCell text-primary fw-bold">
-            <%= image_tag("main/spi.svg", size: "24x24", class: "img-fluid mb-2", alt: "spi.svg") %>
-            &nbsp;
             SPI
+            &nbsp;
             <span class="text-info">
               <%= "#{@from_current_year_january&.spi}".html_safe %>
             </span>
-            <br/>
+            &nbsp;
             <%= growth_degrowth_category("january", :spi) %>
           </div>
         </div>
