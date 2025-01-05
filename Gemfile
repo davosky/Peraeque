@@ -3,6 +3,7 @@ source "https://rubygems.org"
 gem "bcrypt"
 gem "bootsnap", require: false
 gem "cancancan"
+gem "chartkick"
 gem "cssbundling-rails"
 gem "devise"
 gem "image_processing"

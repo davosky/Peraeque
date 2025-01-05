@@ -37,4 +37,20 @@ module HomeHelper
       "<span class='text-danger fs-6'><i class='fa-solid fa-circle-arrow-down'></i>&nbsp;#{percentual.round(2)}%</span>".html_safe
     end
   end
+
+  #Returns the value of the members per age range from the current year per month
+  def age_percentual(month, age_range)
+    cur_ran = instance_variable_get("@from_current_year_#{month}").send(age_range).to_f
+    cur_tot = instance_variable_get("@from_previous_year_#{month}").regional.to_f
+    percentual = (cur_ran / cur_tot) * 100
+
+    "<span class='text-info'>#{percentual.round(2)}%</span>".html_safe
+  end
+
+  #Returns the value of the members per age range from the current year per month to put on chartkick chart
+  def chart_kick_age_percentual(month, age_range)
+    cur_ran = instance_variable_get("@from_current_year_#{month}").send(age_range).to_f
+    cur_tot = instance_variable_get("@from_previous_year_#{month}").regional.to_f
+    percentual = ((cur_ran / cur_tot) * 100).round(2)
+  end
 end

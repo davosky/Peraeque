@@ -162,7 +162,7 @@
     </ul>
   </div>
 </div>
-<div class="row mt-3 mb-5">
+<div class="row mt-3">
   <div class="col-6">
     <div class="divTable shadow pt-2">
       <div class="divTableBody">
@@ -382,5 +382,125 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
+<hr class="text-primary mt-4"/>
+<div class="row mt-2">
+  <div class="col-12">
+    <span class="text-primary fs-4 fw-bolder">
+      &emsp;
+      <i class="fa-solid fa-venus"></i>
+      Donne
+      &nbsp;
+      <span class="text-info">
+        <%= "#{@from_current_year_january&.women}".html_safe %>
+        &nbsp;
+        <%= age_percentual("january", :women) %>
+      </span>
+    </span>
+    &emsp;
+    <span class="text-primary fs-4 fw-bolder">
+      &emsp;
+      <i class="fa-solid fa-mars"></i>
+      Uomini
+      &nbsp;
+      <span class="text-info">
+        <%= "#{@from_current_year_january&.men}".html_safe %>
+        &nbsp;
+        <%= age_percentual("january", :men) %>
+      </span>
+    </span>
+    <span class="float-end text-info">
+      <i class="fa-solid fa-calendar-days"></i>
+      <%= "#{Date.today.year}".html_safe %>
+      &nbsp;
+    </span>
+    <br/>
+    &nbsp;
+    <div class="divTable shadow pt-2">
+      <div class="divTableBody">
+        <div class="divTableRow">
+          <div class="divTableCell text-primary fw-bold">
+            Giovani
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            Trentenni
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            Quarantenni
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            Cinquantenni
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            Sessantenni
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            Settantenni
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            Ottantenni
+          </div>
+          <div class="divTableCell text-primary fw-bold">
+            Highlanders
+          </div>
+        </div>
+        <div class="divTableRow">
+          <div class="divTableCell text-info fw-bold">
+            <%= "#{@from_current_year_january&.young}".html_safe %>
+            &nbsp;|&nbsp;
+            <%= age_percentual("january", :young) %>
+          </div>
+          <div class="divTableCell text-info fw-bold">
+            <%= "#{@from_current_year_january&.thirty}".html_safe %>
+            &nbsp;|&nbsp;
+            <%= age_percentual("january", :thirty) %>
+          </div>
+          <div class="divTableCell text-info fw-bold">
+            <%= "#{@from_current_year_january&.forty}".html_safe %>
+            &nbsp;|&nbsp;
+            <%= age_percentual("january", :forty) %>
+          </div>
+          <div class="divTableCell text-info fw-bold">
+            <%= "#{@from_current_year_january&.fifty}".html_safe %>
+            &nbsp;|&nbsp;
+            <%= age_percentual("january", :fifty) %>
+          </div>
+          <div class="divTableCell text-info fw-bold">
+            <%= "#{@from_current_year_january&.sixty}".html_safe %>
+            &nbsp;|&nbsp;
+            <%= age_percentual("january", :sixty) %>
+          </div>
+          <div class="divTableCell text-info fw-bold">
+            <%= "#{@from_current_year_january&.seventy}".html_safe %>
+            &nbsp;|&nbsp;
+            <%= age_percentual("january", :seventy) %>
+          </div>
+          <div class="divTableCell text-info fw-bold">
+            <%= "#{@from_current_year_january&.eighty}".html_safe %>
+            &nbsp;|&nbsp;
+            <%= age_percentual("january", :eighty) %>
+          </div>
+          <div class="divTableCell text-info fw-bold">
+            <%= "#{@from_current_year_january&.highlander}".html_safe %>
+            &nbsp;|&nbsp;
+            <%= age_percentual("january", :highlander) %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row mt-1 mb-5">
+  <div class="col-12">
+    <%= column_chart [["Giovani", chart_kick_age_percentual("january", :young)], 
+                      ["Trentenni", chart_kick_age_percentual("january", :thirty)],
+                      ["Quarantenni", chart_kick_age_percentual("january", :forty)],
+                      ["Cinquantenni", chart_kick_age_percentual("january", :fifty)],
+                      ["Sessantenni", chart_kick_age_percentual("january", :sixty)],
+                      ["Settantenni", chart_kick_age_percentual("january", :seventy)],
+                      ["Ottantenni", chart_kick_age_percentual("january", :eighty)],
+                      ["Highlanders", chart_kick_age_percentual("january", :highlander)]
+    ], colors: ["#287bb5" ] %>
   </div>
 </div>
