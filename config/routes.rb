@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get "home/credits"
   get "home/jan"
 
+  resources :imports
+
   get "up" => "rails/health#show", as: :rails_health_check
 
   get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker

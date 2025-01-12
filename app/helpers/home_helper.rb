@@ -72,4 +72,11 @@ module HomeHelper
       "<span class='text-danger fs-6'><i class='fa-solid fa-circle-arrow-down'></i>&nbsp;#{percentual.round(2)}%</span>".html_safe
     end
   end
+
+  def chartkick_growth_degrowth_subscription_type(month, subscription_type)
+    pre_value = instance_variable_get("@from_previous_year_#{month}").send(subscription_type).to_f
+    cur_value = instance_variable_get("@from_current_year_#{month}").send(subscription_type).to_f
+    percentual = ((cur_value - pre_value) / pre_value) * 100
+    percentual = percentual.round(2)
+  end
 end

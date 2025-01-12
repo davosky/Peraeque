@@ -1,0 +1,417 @@
+<%= form_with(model: import) do |form| %>
+  <% if import.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(import.errors.count, "error") %> prohibited this import from being saved:</h2>
+
+      <ul>
+        <% import.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :year, style: "display: block" %>
+    <%= form.text_field :year %>
+  </div>
+
+  <div>
+    <%= form.label :month, style: "display: block" %>
+    <%= form.text_field :month %>
+  </div>
+
+  <div>
+    <%= form.label :categoria, style: "display: block" %>
+    <%= form.text_field :categoria %>
+  </div>
+
+  <div>
+    <%= form.label :cognome, style: "display: block" %>
+    <%= form.text_field :cognome %>
+  </div>
+
+  <div>
+    <%= form.label :cognome_acquisito, style: "display: block" %>
+    <%= form.text_field :cognome_acquisito %>
+  </div>
+
+  <div>
+    <%= form.label :nome, style: "display: block" %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div>
+    <%= form.label :consenso1, style: "display: block" %>
+    <%= form.text_field :consenso1 %>
+  </div>
+
+  <div>
+    <%= form.label :consenso2, style: "display: block" %>
+    <%= form.text_field :consenso2 %>
+  </div>
+
+  <div>
+    <%= form.label :consenso3, style: "display: block" %>
+    <%= form.text_field :consenso3 %>
+  </div>
+
+  <div>
+    <%= form.label :consenso4, style: "display: block" %>
+    <%= form.text_field :consenso4 %>
+  </div>
+
+  <div>
+    <%= form.label :documento_privacy, style: "display: block" %>
+    <%= form.text_field :documento_privacy %>
+  </div>
+
+  <div>
+    <%= form.label :codice_fiscale, style: "display: block" %>
+    <%= form.text_field :codice_fiscale %>
+  </div>
+
+  <div>
+    <%= form.label :sesso, style: "display: block" %>
+    <%= form.text_field :sesso %>
+  </div>
+
+  <div>
+    <%= form.label :altro_sesso, style: "display: block" %>
+    <%= form.text_field :altro_sesso %>
+  </div>
+
+  <div>
+    <%= form.label :stato_civile, style: "display: block" %>
+    <%= form.text_field :stato_civile %>
+  </div>
+
+  <div>
+    <%= form.label :data_nascita, style: "display: block" %>
+    <%= form.date_field :data_nascita %>
+  </div>
+
+  <div>
+    <%= form.label :data_decesso, style: "display: block" %>
+    <%= form.date_field :data_decesso %>
+  </div>
+
+  <div>
+    <%= form.label :luogo_nascita, style: "display: block" %>
+    <%= form.text_field :luogo_nascita %>
+  </div>
+
+  <div>
+    <%= form.label :titolo_studio, style: "display: block" %>
+    <%= form.text_field :titolo_studio %>
+  </div>
+
+  <div>
+    <%= form.label :telefono, style: "display: block" %>
+    <%= form.text_field :telefono %>
+  </div>
+
+  <div>
+    <%= form.label :cellulare, style: "display: block" %>
+    <%= form.text_field :cellulare %>
+  </div>
+
+  <div>
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_area :email %>
+  </div>
+
+  <div>
+    <%= form.label :indirizzo, style: "display: block" %>
+    <%= form.text_area :indirizzo %>
+  </div>
+
+  <div>
+    <%= form.label :frazione, style: "display: block" %>
+    <%= form.text_field :frazione %>
+  </div>
+
+  <div>
+    <%= form.label :localita_postale, style: "display: block" %>
+    <%= form.text_field :localita_postale %>
+  </div>
+
+  <div>
+    <%= form.label :cap, style: "display: block" %>
+    <%= form.text_field :cap %>
+  </div>
+
+  <div>
+    <%= form.label :comune, style: "display: block" %>
+    <%= form.text_field :comune %>
+  </div>
+
+  <div>
+    <%= form.label :provincia, style: "display: block" %>
+    <%= form.text_field :provincia %>
+  </div>
+
+  <div>
+    <%= form.label :nazionalita, style: "display: block" %>
+    <%= form.text_field :nazionalita %>
+  </div>
+
+  <div>
+    <%= form.label :tipologia_status, style: "display: block" %>
+    <%= form.text_field :tipologia_status %>
+  </div>
+
+  <div>
+    <%= form.label :tipologia_rapporto_lavoro, style: "display: block" %>
+    <%= form.text_field :tipologia_rapporto_lavoro %>
+  </div>
+
+  <div>
+    <%= form.label :data_inizio_lavoro, style: "display: block" %>
+    <%= form.date_field :data_inizio_lavoro %>
+  </div>
+
+  <div>
+    <%= form.label :data_fine_lavoro, style: "display: block" %>
+    <%= form.date_field :data_fine_lavoro %>
+  </div>
+
+  <div>
+    <%= form.label :motivo_cessazione_lavoro, style: "display: block" %>
+    <%= form.text_field :motivo_cessazione_lavoro %>
+  </div>
+
+  <div>
+    <%= form.label :tipologia_iscrizione, style: "display: block" %>
+    <%= form.text_field :tipologia_iscrizione %>
+  </div>
+
+  <div>
+    <%= form.label :tipologia_delega, style: "display: block" %>
+    <%= form.text_field :tipologia_delega %>
+  </div>
+
+  <div>
+    <%= form.label :data_inizio_iscrizione, style: "display: block" %>
+    <%= form.date_field :data_inizio_iscrizione %>
+  </div>
+
+  <div>
+    <%= form.label :data_fine_iscrizione, style: "display: block" %>
+    <%= form.date_field :data_fine_iscrizione %>
+  </div>
+
+  <div>
+    <%= form.label :data_inizio_trattenuta, style: "display: block" %>
+    <%= form.date_field :data_inizio_trattenuta %>
+  </div>
+
+  <div>
+    <%= form.label :data_fine_trattenuta, style: "display: block" %>
+    <%= form.date_field :data_fine_trattenuta %>
+  </div>
+
+  <div>
+    <%= form.label :utente_modifica, style: "display: block" %>
+    <%= form.text_field :utente_modifica %>
+  </div>
+
+  <div>
+    <%= form.label :data_modifica, style: "display: block" %>
+    <%= form.datetime_field :data_modifica %>
+  </div>
+
+  <div>
+    <%= form.label :tipologia_versamento, style: "display: block" %>
+    <%= form.text_field :tipologia_versamento %>
+  </div>
+
+  <div>
+    <%= form.label :motivo_cessazione_iscrizione, style: "display: block" %>
+    <%= form.text_field :motivo_cessazione_iscrizione %>
+  </div>
+
+  <div>
+    <%= form.label :provvisoria, style: "display: block" %>
+    <%= form.text_field :provvisoria %>
+  </div>
+
+  <div>
+    <%= form.label :status_confermato_da_nastro, style: "display: block" %>
+    <%= form.text_field :status_confermato_da_nastro %>
+  </div>
+
+  <div>
+    <%= form.label :concomitante_spi_anno, style: "display: block" %>
+    <%= form.text_field :concomitante_spi_anno %>
+  </div>
+
+  <div>
+    <%= form.label :tipologia_azienda, style: "display: block" %>
+    <%= form.text_field :tipologia_azienda %>
+  </div>
+
+  <div>
+    <%= form.label :ragione_sociale_azienda, style: "display: block" %>
+    <%= form.text_area :ragione_sociale_azienda %>
+  </div>
+
+  <div>
+    <%= form.label :codice_fiscale_azienda, style: "display: block" %>
+    <%= form.text_field :codice_fiscale_azienda %>
+  </div>
+
+  <div>
+    <%= form.label :partita_iva_azienda, style: "display: block" %>
+    <%= form.text_field :partita_iva_azienda %>
+  </div>
+
+  <div>
+    <%= form.label :nome_unita_locale, style: "display: block" %>
+    <%= form.text_area :nome_unita_locale %>
+  </div>
+
+  <div>
+    <%= form.label :condizione_unita_locale, style: "display: block" %>
+    <%= form.text_field :condizione_unita_locale %>
+  </div>
+
+  <div>
+    <%= form.label :indirizzo_unita_locale, style: "display: block" %>
+    <%= form.text_area :indirizzo_unita_locale %>
+  </div>
+
+  <div>
+    <%= form.label :cap_unita_locale, style: "display: block" %>
+    <%= form.text_field :cap_unita_locale %>
+  </div>
+
+  <div>
+    <%= form.label :comune_unita_locale, style: "display: block" %>
+    <%= form.text_field :comune_unita_locale %>
+  </div>
+
+  <div>
+    <%= form.label :provincia_unita_locale, style: "display: block" %>
+    <%= form.text_field :provincia_unita_locale %>
+  </div>
+
+  <div>
+    <%= form.label :telefono_azienda, style: "display: block" %>
+    <%= form.text_field :telefono_azienda %>
+  </div>
+
+  <div>
+    <%= form.label :email_azienda, style: "display: block" %>
+    <%= form.text_area :email_azienda %>
+  </div>
+
+  <div>
+    <%= form.label :ragione_sociale_azienda_fruitrice, style: "display: block" %>
+    <%= form.text_area :ragione_sociale_azienda_fruitrice %>
+  </div>
+
+  <div>
+    <%= form.label :nome_unita_locale_fruitrice, style: "display: block" %>
+    <%= form.text_area :nome_unita_locale_fruitrice %>
+  </div>
+
+  <div>
+    <%= form.label :funzionario, style: "display: block" %>
+    <%= form.text_field :funzionario %>
+  </div>
+
+  <div>
+    <%= form.label :condizione_status, style: "display: block" %>
+    <%= form.text_field :condizione_status %>
+  </div>
+
+  <div>
+    <%= form.label :contratto_nazionale, style: "display: block" %>
+    <%= form.text_area :contratto_nazionale %>
+  </div>
+
+  <div>
+    <%= form.label :settore_lavorativo, style: "display: block" %>
+    <%= form.text_area :settore_lavorativo %>
+  </div>
+
+  <div>
+    <%= form.label :codice_azzonamento_completo, style: "display: block" %>
+    <%= form.text_field :codice_azzonamento_completo %>
+  </div>
+
+  <div>
+    <%= form.label :descrizione_azzonamento_completo, style: "display: block" %>
+    <%= form.text_field :descrizione_azzonamento_completo %>
+  </div>
+
+  <div>
+    <%= form.label :codice_azzonamento_regionale, style: "display: block" %>
+    <%= form.text_field :codice_azzonamento_regionale %>
+  </div>
+
+  <div>
+    <%= form.label :descrizione_azzonamento_regionale, style: "display: block" %>
+    <%= form.text_field :descrizione_azzonamento_regionale %>
+  </div>
+
+  <div>
+    <%= form.label :codice_azzonamento_comprensoriale, style: "display: block" %>
+    <%= form.text_field :codice_azzonamento_comprensoriale %>
+  </div>
+
+  <div>
+    <%= form.label :descrizione_azzonamento_comprensoriale, style: "display: block" %>
+    <%= form.text_field :descrizione_azzonamento_comprensoriale %>
+  </div>
+
+  <div>
+    <%= form.label :struttura_attivazione_iscrizione, style: "display: block" %>
+    <%= form.text_area :struttura_attivazione_iscrizione %>
+  </div>
+
+  <div>
+    <%= form.label :evento_attivazione_iscrizione, style: "display: block" %>
+    <%= form.text_area :evento_attivazione_iscrizione %>
+  </div>
+
+  <div>
+    <%= form.label :stampa_tessera, style: "display: block" %>
+    <%= form.text_field :stampa_tessera %>
+  </div>
+
+  <div>
+    <%= form.label :anno_stampa, style: "display: block" %>
+    <%= form.text_field :anno_stampa %>
+  </div>
+
+  <div>
+    <%= form.label :data_contabilizzazione_tessera, style: "display: block" %>
+    <%= form.date_field :data_contabilizzazione_tessera %>
+  </div>
+
+  <div>
+    <%= form.label :descrizione_reparto, style: "display: block" %>
+    <%= form.text_area :descrizione_reparto %>
+  </div>
+
+  <div>
+    <%= form.label :qualifica, style: "display: block" %>
+    <%= form.text_field :qualifica %>
+  </div>
+
+  <div>
+    <%= form.label :livello, style: "display: block" %>
+    <%= form.text_field :livello %>
+  </div>
+
+  <div>
+    <%= form.label :part_time, style: "display: block" %>
+    <%= form.text_field :part_time %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

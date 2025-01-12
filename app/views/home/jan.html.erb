@@ -1,4 +1,4 @@
-<div class="row mt-3">
+<div class="row mt-3 mb-3">
   <div class="col">
     <span class="text-primary fw-bolder fs-4">
       <%= image_tag("icon/jan-icon.svg", class: "img-fluid", alt: "jan-icon.svg") %>
@@ -40,9 +40,22 @@
     <hr class="text-primary"/>
   </div>
 </div>
-<div class="row mt-2">
+<div class="row mt-3 mb-3">
+  <div class="row">
+    <div class="col-12">
+      <p class="text-primary fs-4 fst-italic fw-bolder">
+        <span class="float-start bg-primary text-white rounded ps-3 me-3">
+          Territori
+          &emsp;
+        </span>
+        <span class="float-end">
+          <hr class="text-primary"/>
+        </span>
+      </p>
+    </div>
+  </div>
   <div class="col-6">
-    <p class="text-primary text-center mb-2 fs-4 fw-bold">
+    <p class="text-primary text-center mb-2 fs-5 fw-bold">
       Anno:&emsp;
       <%= "#{Date.today.year - 1}".html_safe %>
     </p>
@@ -102,7 +115,7 @@
     </ul>
   </div>
   <div class="col-6">
-    <p class="text-primary text-center mb-2 fs-4 fw-bold">
+    <p class="text-primary text-center mb-2 fs-5 fw-bold">
       Anno:&emsp;
       <%= "#{Date.today.year}".html_safe %>
     </p>
@@ -162,8 +175,25 @@
     </ul>
   </div>
 </div>
-<div class="row mt-3">
+<div class="row mt-3 mb-3">
+  <div class="row">
+    <div class="col-12">
+      <p class="text-primary fs-4 fst-italic fw-bolder">
+        <span class="float-start bg-primary text-white rounded ps-3 me-3">
+          Categorie
+          &emsp;
+        </span>
+        <span class="float-end">
+          <hr class="text-primary"/>
+        </span>
+      </p>
+    </div>
+  </div>
   <div class="col-6">
+    <p class="text-primary text-center mb-2 fs-5 fw-bold">
+      Anno:&emsp;
+      <%= "#{Date.today.year - 1}".html_safe %>
+    </p>
     <div class="divTable shadow pt-2">
       <div class="divTableBody">
         <div class="divTableRow">
@@ -262,6 +292,10 @@
     </div>
   </div>
   <div class="col-6">
+    <p class="text-primary text-center mb-2 fs-5 fw-bold">
+      Anno:&emsp;
+      <%= "#{Date.today.year}".html_safe %>
+    </p>
     <div class="divTable shadow pt-2">
       <div class="divTableBody">
         <div class="divTableRow">
@@ -384,10 +418,22 @@
     </div>
   </div>
 </div>
-<hr class="text-primary mt-4"/>
-<div class="row mt-2">
+<div class="row mt-3 mb-3">
+  <div class="row mb-3">
+    <div class="col-12">
+      <p class="text-primary fs-4 fst-italic fw-bolder">
+        <span class="float-start bg-primary text-white rounded ps-3 me-3">
+          Classi di Et&agrave;
+          &emsp;
+        </span>
+        <span class="float-end">
+          <hr class="text-primary"/>
+        </span>
+      </p>
+    </div>
+  </div>
   <div class="col-12">
-    <span class="text-primary fs-4 fw-bolder">
+    <span class="text-primary fs-5 fw-bolder">
       &emsp;
       <i class="fa-solid fa-venus"></i>
       Donne
@@ -399,7 +445,7 @@
       </span>
     </span>
     &emsp;
-    <span class="text-primary fs-4 fw-bolder">
+    <span class="text-primary fs-5 fw-bolder">
       &emsp;
       <i class="fa-solid fa-mars"></i>
       Uomini
@@ -410,8 +456,11 @@
         <%= age_percentual("january", :men) %>
       </span>
     </span>
-    <span class="float-end text-info">
+    <span class="float-end text-primary">
       <i class="fa-solid fa-calendar-days"></i>
+      &nbsp;
+      Gennaio
+      &nbsp;
       <%= "#{Date.today.year}".html_safe %>
       &nbsp;
     </span>
@@ -491,7 +540,7 @@
     </div>
   </div>
 </div>
-<div class="row mt-1">
+<div class="row mt-3 mb-3">
   <div class="col-12">
     <%= column_chart [["Giovani", chart_kick_age_percentual("january", :young)], 
                       ["Trentenni", chart_kick_age_percentual("january", :thirty)],
@@ -504,8 +553,20 @@
     ], colors: ["#287bb5", "#287bb5" ] %>
   </div>
 </div>
-<hr class="text-primary mt-3"/>
-<div class="row mt-2">
+<div class="row mt-3 mb-3">
+  <div class="row">
+    <div class="col-12">
+      <p class="text-primary fs-4 fst-italic fw-bolder">
+        <span class="float-start bg-primary text-white rounded ps-3 me-3">
+          Tipologie Iscrizione
+          &emsp;
+        </span>
+        <span class="float-end">
+          <hr class="text-primary"/>
+        </span>
+      </p>
+    </div>
+  </div>
   <div class="col-6">
     <p class="text-center text-primary fs-5 fw-bolder">
       Anno:&emsp;
@@ -555,8 +616,20 @@
     </div>
   </div>
 </div>
-<hr class="text-primary mt-3"/>
-<div class="row mt-2 mb-5">
+<div class="row mt-3 mb-3">
+  <div class="row">
+    <div class="col-12">
+      <p class="text-primary fs-4 fst-italic fw-bolder">
+        <span class="float-start bg-primary text-white rounded ps-3 me-3">
+          Tipologie Delega
+          &emsp;
+        </span>
+        <span class="float-end">
+          <hr class="text-primary"/>
+        </span>
+      </p>
+    </div>
+  </div>
   <div class="col-6">
     <p class="text-center text-primary fs-5 fw-bolder">
       Anno:&emsp;
@@ -709,5 +782,17 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
+<div class="row mt-3 mb-5">
+  <div class="col-12">
+    <%= area_chart [["Ordinaria", chartkick_growth_degrowth_subscription_type("january", :ordinaria)], 
+                      ["Ordinaria Cassa Edile", chartkick_growth_degrowth_subscription_type("january", :ordinariace)],
+                      ["NASPI", chartkick_growth_degrowth_subscription_type("january", :naspi)],
+                      ["DS Agricola", chartkick_growth_degrowth_subscription_type("january", :dsagricola)],
+                      ["Delega Tesoro", chartkick_growth_degrowth_subscription_type("january", :delegatesoro)],
+                      ["Concomitante", chartkick_growth_degrowth_subscription_type("january", :concomitante)],
+                      ["Concomitante SPI Anno", chart_kick_age_percentual("january", :concomitantespianno)]
+    ], colors: ["#287bb5", "#287bb5" ] %>
   </div>
 </div>
