@@ -1,0 +1,81 @@
+<div class="row mt-2">
+  <div class="col-12">
+    <div class="card bg-white border-secondary shadow">
+      <div class="card-body bg-white border-white shadow-none">
+        <span class="text-primary fs-6 fw-bolder fst-italic m-0 p-1">
+          Tipologie Iscrizione
+          <hr class="m-0 p-0" />
+        </span>
+        <div class="row">
+          <div class="col-6 border-end">
+            <p class="text-info text-center mb-2 fs-5 fw-bold">
+              Anno:&emsp;
+              <%= "#{Date.today.year - 1}".html_safe %>
+              <br/>
+              <span class="text-info">
+                Deleghe:
+                &nbsp;
+                <%= "#{@from_previous_year_january&.delega}".html_safe %>
+                &emsp;
+                <span class="text-warning">
+                  BreviManu(dirette):
+                  <%= "#{@from_previous_year_january&.brevimanu}".html_safe %>
+                </span>
+              </span>
+            </p>
+            <div class="row">
+              <div class="col-4 offset-4">
+                <%= pie_chart [["Deleghe", chart_kick_subscription_type_percentual("previous", "january", :delega)],
+      ["Brevimanu", chart_kick_subscription_type_percentual("previous", "january", :brevimanu)]
+      ], colors: ["#287bb5", "#f8765f" ],
+      width: "200px", height: "200px",
+      library: {
+        plugins: {
+        datalabels: {
+          color: "#fff",
+          font: { weight: "bold", size: 14 }
+        }
+        }
+      }
+      %>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <p class="text-info text-center mb-2 fs-5 fw-bold">
+              Anno:&emsp;
+              <%= "#{Date.today.year}".html_safe %>
+              <br/>
+              <span class="text-info">
+                Deleghe:
+                &nbsp;
+                <%= "#{@from_current_year_january&.delega}".html_safe %>
+                &emsp;
+                <span class="text-warning">
+                  BreviManu(dirette):
+                  <%= "#{@from_current_year_january&.brevimanu}".html_safe %>
+                </span>
+              </span>
+            </p>
+            <div class="row">
+              <div class="col-4 offset-4">
+                <%= pie_chart [["Deleghe", chart_kick_subscription_type_percentual("current", "january", :delega)],
+      ["Brevimanu", chart_kick_subscription_type_percentual("current", "january", :brevimanu)]
+      ], colors: ["#287bb5", "#f8765f" ],
+      width: "200px", height: "200px",
+      library: {
+        plugins: {
+        datalabels: {
+          color: "#fff",
+          font: { weight: "bold", size: 14 }
+        }
+        }
+      } %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

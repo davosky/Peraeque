@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-primary fixed-top gradient-custom shadow" data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg bg-primary fixed-top shadow" data-bs-theme="dark">
   <div class="container">
     <%= link_to root_path, class: "navbar-brand" do %>
       <%= image_tag("navbar/navbar-logo.svg", class: "img-fluid", alt: "navbar-logo") %>
@@ -16,6 +16,19 @@
               <i class="fa-solid fa-calendar-day"></i>
               &nbsp;
               Gennaio
+            <% end %>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown nav-link-main-navbar" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-upload"></i>
+            &nbsp;Importazioni
+          </a>
+          <div class="dropdown-menu">
+            <%= link_to imports_path, class: "dropdown-item" do %>
+              <i class="fa-solid fa-upload"></i>
+              &nbsp;
+              Importa
             <% end %>
           </div>
         </li>

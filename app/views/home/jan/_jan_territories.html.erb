@@ -1,0 +1,134 @@
+<div class="row">
+  <div class="col-12">
+    <div class="card bg-white border-secondary shadow">
+      <div class="card-body bg-white border-white shadow-none">
+        <span class="text-primary fs-6 fw-bolder fst-italic m-0 p-1">
+          Territori
+          <hr class="m-0 p-0" />
+        </span>
+        <div class="row">
+          <div class="col-6 border-end">
+            <p class="text-info text-center mb-2 fs-5 fw-bold">
+              Anno:&emsp;
+              <%= "#{Date.today.year - 1}".html_safe %>
+            </p>
+            <ul class="list-group list-group-horizontal bg-white shadow-none">
+              <li class="list-group-item border-white text-center">
+                <%= image_tag("main/gorizia-logo", size: "32x32", class: "img-fluid mb-2", alt: "gorizia-logo.svg") %>
+                Gorizia
+                <br/>
+                <span class="text-primary fs-5">
+                  <i class="fa-solid fa-users"></i>
+                </span>
+                <span class="text-info fs-5 fw-bolder">
+                  <%= "#{@from_previous_year_january&.gorizia}".html_safe %>
+                </span>
+                <br/>
+                &emsp;
+              </li>
+              <li class="list-group-item border-white text-center">
+                <%= image_tag("main/pordenone-logo.svg", size: "32x32", class: "img-fluid mb-2", alt: "pordenone-logo.svg") %>
+                Pordenone
+                <br/>
+                <span class="text-primary fs-5">
+                  <i class="fa-solid fa-users"></i>
+                </span>
+                <span class="text-info fs-5 fw-bolder">
+                  <%= "#{@from_previous_year_january&.pordenone}".html_safe %>
+                </span>
+                <br/>
+                &emsp;
+              </li>
+              <li class="list-group-item border-white text-center">
+                <%= image_tag("main/trieste-logo.svg", size: "32x32", class: "img-fluid mb-2", alt: "trieste-logo.svg") %>
+                Trieste
+                <br/>
+                <span class="text-primary fs-5">
+                  <i class="fa-solid fa-users"></i>
+                </span>
+                <span class="text-info fs-5 fw-bolder">
+                  <%= "#{@from_previous_year_january&.trieste}".html_safe %>
+                </span>
+                <br/>
+                &emsp;
+              </li>
+              <li class="list-group-item border-white text-center">
+                <%= image_tag("main/udine-logo.svg", size: "32x32", class: "img-fluid mb-2", alt: "udine-logo.svg") %>
+                Udine
+                <br/>
+                <span class="text-primary fs-5">
+                  <i class="fa-solid fa-users"></i>
+                </span>
+                <span class="text-info fs-5 fw-bolder">
+                  <%= "#{@from_previous_year_january&.udine}".html_safe %>
+                </span>
+                <br/>
+                &emsp;
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <p class="text-info text-center mb-2 fs-5 fw-bold">
+              Anno:&emsp;
+              <%= "#{Date.today.year}".html_safe %>
+            </p>
+            <ul class="list-group list-group-horizontal bg-white shadow-none">
+              <li class="list-group-item border-white text-center">
+                <%= image_tag("main/gorizia-logo", size: "32x32", class: "img-fluid mb-2", alt: "gorizia-logo.svg") %>
+                Gorizia
+                <br/>
+                <span class="text-primary fs-5">
+                  <i class="fa-solid fa-users"></i>
+                </span>
+                <span class="text-info fs-5 fw-bolder">
+                  <%= "#{@from_current_year_january&.gorizia}".html_safe %>
+                </span>
+                <br/>
+                <%= growth_degrowth_territory("january", :gorizia) %>
+              </li>
+              <li class="list-group-item border-white text-center">
+                <%= image_tag("main/pordenone-logo.svg", size: "32x32", class: "img-fluid mb-2", alt: "pordenone-logo.svg") %>
+                Pordenone
+                <br/>
+                <span class="text-primary fs-5">
+                  <i class="fa-solid fa-users"></i>
+                </span>
+                <span class="text-info fs-5 fw-bolder">
+                  <%= "#{@from_current_year_january&.pordenone}".html_safe %>
+                </span>
+                <br/>
+                <%= growth_degrowth_territory("january", :pordenone) %>
+              </li>
+              <li class="list-group-item border-white text-center">
+                <%= image_tag("main/trieste-logo.svg", size: "32x32", class: "img-fluid mb-2", alt: "trieste-logo.svg") %>
+                Trieste
+                <br/>
+                <span class="text-primary fs-5">
+                  <i class="fa-solid fa-users"></i>
+                </span>
+                <span class="text-info fs-5 fw-bolder">
+                  <%= "#{@from_current_year_january&.trieste}".html_safe %>
+                </span>
+                <br/>
+                <%= growth_degrowth_territory("january", :trieste) %>
+              </li>
+              <li class="list-group-item border-white text-center">
+                <%= image_tag("main/udine-logo.svg", size: "32x32", class: "img-fluid mb-2", alt: "udine-logo.svg") %>
+                Udine
+                <br/>
+                <span class="text-primary fs-5">
+                  <i class="fa-solid fa-users"></i>
+                </span>
+                <span class="text-info fs-5 fw-bolder">
+                  <%= "#{@from_current_year_january&.udine}".html_safe %>
+                </span>
+                <br/>
+                <%= growth_degrowth_territory("january", :udine) %>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

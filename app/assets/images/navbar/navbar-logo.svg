@@ -7,7 +7,7 @@
    viewBox="0 0 31.749999 10.583333"
    version="1.1"
    id="svg5"
-   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
    sodipodi:docname="navbar-logo.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -25,7 +25,7 @@
      inkscape:document-units="px"
      showgrid="false"
      inkscape:zoom="8"
-     inkscape:cx="35.0625"
+     inkscape:cx="35"
      inkscape:cy="-0.875"
      inkscape:window-width="2528"
      inkscape:window-height="1404"
@@ -69,7 +69,7 @@
        d="M 5.8739265,0 A 5.2916664,5.2916664 0 0 0 0.58226006,5.2916664 5.2916664,5.2916664 0 0 0 5.8739265,10.583333 5.2916664,5.2916664 0 0 0 10.189838,8.348844 H 8.9705849 C 9.2206883,6.9044622 9.4704965,5.4600686 9.7205133,4.015672 L 9.7358093,3.927719 H 10.986585 A 5.2916664,5.2916664 0 0 0 5.8739265,0 Z m 4.7513375,4.8476626 c -0.04557,0.2609372 -0.09116,0.5218572 -0.136736,0.7827944 H 11.15288 A 5.2916664,5.2916664 0 0 0 11.16559,5.2916664 5.2916664,5.2916664 0 0 0 11.14657,4.8476626 Z m -0.291868,1.6796906 c -0.05234,0.301432 -0.10465,0.6029056 -0.156993,0.9043376 H 10.7096 a 5.2916664,5.2916664 0 0 0 0.307681,-0.9043376 z" />
     <path
        d="M 6.5335643,6.4005782 5.4604255,6.3954662 5.0056189,9.0118816 H 3.5338851 l 1.2877668,-7.4404311 2.3915672,0.00511 Q 8.2454765,1.6072248 8.7667157,2.3073184 9.2930651,3.002304 9.2113019,3.99368 9.1142085,5.1025904 8.3732313,5.7566942 7.6322543,6.405688 6.5335643,6.4005778 Z M 6.0787577,2.8234478 5.6750533,5.1434722 l 0.935164,0.01022 Q 7.1161257,5.1434722 7.3920757,4.8113096 7.6680257,4.4791474 7.7293481,4.0039004 7.7753397,3.6512974 7.6833565,3.257813 7.5913729,2.8592188 7.1467867,2.8336676 Z"
-       style="font-style:italic;font-weight:bold;font-size:29.6057px;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed,  Bold Italic';fill:#5f554c;fill-opacity:1;stroke-width:4.04236"
+       style="font-style:italic;font-weight:bold;font-size:29.6057px;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed,  Bold Italic';fill:#5a5a5a;fill-opacity:1;stroke-width:4.04236"
        id="path2510" />
     <path
        d="M 9.0964555,8.2431136 9.8250333,4.0335532 h 2.3447477 l -0.12432,0.7083394 h -1.509197 l -0.173471,0.9945666 h 1.283685 l -0.12143,0.68521 h -1.280794 l -0.193709,1.115996 h 1.517871 l -0.124321,0.7054484 z"

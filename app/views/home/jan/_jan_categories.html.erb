@@ -1,0 +1,242 @@
+<div class="row mt-2">
+  <div class="col-12">
+    <div class="card bg-white border-secondary shadow">
+      <div class="card-body bg-white border-white shadow-none">
+        <span class="text-primary fs-6 fw-bolder fst-italic m-0 p-1">
+          Categorie
+          <hr class="m-0 p-0" />
+        </span>
+        <div class="row">
+          <div class="col-6 border-end">
+            <p class="text-info text-center mb-2 fs-5 fw-bold">
+              Anno:&emsp;
+              <%= "#{Date.today.year - 1}".html_safe %>
+            </p>
+            <div class="divTable pt-2">
+              <div class="divTableBody">
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    FILCAMS
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_previous_year_january&.filcams}".html_safe %>
+                    </span>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    FILCTEM
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_previous_year_january&.filctem}".html_safe %>
+                    </span>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    FILLEA
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_previous_year_january&.fillea}".html_safe %>
+                    </span>
+                  </div>
+                </div>
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    FILT
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_previous_year_january&.filt}".html_safe %>
+                    </span>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    FIOM
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_previous_year_january&.fiom}".html_safe %>
+                    </span>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    FISAC
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_previous_year_january&.fisac}".html_safe %>
+                    </span>
+                  </div>
+                </div>
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    FLAI
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_previous_year_january&.flai}".html_safe %>
+                    </span>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    FLC
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_previous_year_january&.flc}".html_safe %>
+                    </span>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    FP
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_previous_year_january&.fp}".html_safe %>
+                    </span>
+                  </div>
+                </div>
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    NIDIL
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_previous_year_january&.nidil}".html_safe %>
+                    </span>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    SLC
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_previous_year_january&.slc}".html_safe %>
+                    </span>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    SPI
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_previous_year_january&.spi}".html_safe %>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <p class="text-info text-center mb-2 fs-5 fw-bold">
+              Anno:&emsp;
+              <%= "#{Date.today.year}".html_safe %>
+            </p>
+            <div class="divTable pt-2">
+              <div class="divTableBody">
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    FILCAMS
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_current_year_january&.filcams}".html_safe %>
+                    </span>
+                    &nbsp;
+                    <%= growth_degrowth_category("january", :filcams) %>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    FILCTEM
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_current_year_january&.filctem}".html_safe %>
+                    </span>
+                    &nbsp;
+                    <%= growth_degrowth_category("january", :filctem) %>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    FILLEA
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_current_year_january&.fillea}".html_safe %>
+                    </span>
+                    &nbsp;
+                    <%= growth_degrowth_category("january", :fillea) %>
+                  </div>
+                </div>
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    FILT
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_current_year_january&.filt}".html_safe %>
+                    </span>
+                    &nbsp;
+                    <%= growth_degrowth_category("january", :filt) %>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    FIOM
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_current_year_january&.fiom}".html_safe %>
+                    </span>
+                    &nbsp;
+                    <%= growth_degrowth_category("january", :fiom) %>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    FISAC
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_current_year_january&.fisac}".html_safe %>
+                    </span>
+                    &nbsp;
+                    <%= growth_degrowth_category("january", :fisac) %>
+                  </div>
+                </div>
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    FLAI
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_current_year_january&.flai}".html_safe %>
+                    </span>
+                    &nbsp;
+                    <%= growth_degrowth_category("january", :flai) %>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    FLC
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_current_year_january&.flc}".html_safe %>
+                    </span>
+                    &nbsp;
+                    <%= growth_degrowth_category("january", :flc) %>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    FP
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_current_year_january&.fp}".html_safe %>
+                    </span>
+                    &nbsp;
+                    <%= growth_degrowth_category("january", :fp) %>
+                  </div>
+                </div>
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    NIDIL
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_current_year_january&.nidil}".html_safe %>
+                    </span>
+                    &nbsp;
+                    <%= growth_degrowth_category("january", :nidil) %>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    SLC
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_current_year_january&.slc}".html_safe %>
+                    </span>
+                    &nbsp;
+                    <%= growth_degrowth_category("january", :slc) %>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    SPI
+                    &nbsp;
+                    <span class="text-info">
+                      <%= "#{@from_current_year_january&.spi}".html_safe %>
+                    </span>
+                    &nbsp;
+                    <%= growth_degrowth_category("january", :spi) %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

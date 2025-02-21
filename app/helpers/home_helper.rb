@@ -6,9 +6,9 @@ module HomeHelper
     percentual = ((cur_value - pre_value) / pre_value) * 100
 
     if cur_value > pre_value
-      "<span class='text-success fs-4'><i class='fa-solid fa-circle-arrow-up'></i>#{percentual.round(2)}%&nbsp;<span class='fs-6'>In Crescita</span></span>".html_safe
+      "<span class='text-success fs-4'><i class='fa-solid fa-circle-arrow-up'></i>&nbsp;#{percentual.round(2)}%&nbsp;<span class='fs-6'>&nbsp;In Crescita</span></span>".html_safe
     else
-      "<span class='text-danger fs-4'><i class='fa-solid fa-circle-arrow-down'></i>#{percentual.round(2)}%&nbsp;<span class='fs-6'>In Calo</span></span>".html_safe
+      "<span class='text-danger fs-4'><i class='fa-solid fa-circle-arrow-down'></i>&nbsp;#{percentual.round(2)}%&nbsp;<span class='fs-6'>&nbsp;In Calo</span></span>".html_safe
     end
   end
 

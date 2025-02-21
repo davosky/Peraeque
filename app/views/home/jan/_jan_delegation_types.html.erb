@@ -1,0 +1,205 @@
+<div class="row mt-2 mb-5">
+  <div class="col-12">
+    <div class="card bg-white border-secondary shadow">
+      <div class="card-body bg-white border-white shadow-none">
+        <span class="text-primary fs-6 fw-bolder fst-italic m-0 p-1">
+          Tipologie Delega
+          <hr class="m-0 p-0" />
+        </span>
+        <div class="row">
+          <div class="col-6 border-end">
+            <p class="text-info text-center mb-2 fs-5 fw-bold">
+              Anno:&emsp;
+              <%= "#{Date.today.year - 1}".html_safe %>
+            </p>
+            <div class="divTable pt-1">
+              <div class="divTableBody">
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    Ordinaria
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    <%= "#{@from_previous_year_january&.ordinaria}".html_safe %>
+                  </div>
+                </div>
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    Ordinaria Cassa Edile
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    <%= "#{@from_previous_year_january&.ordinariace}".html_safe %>
+                  </div>
+                </div>
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    NASPI
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    <%= "#{@from_previous_year_january&.naspi}".html_safe %>
+                  </div>
+                </div>
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    DS Agricola
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    <%= "#{@from_previous_year_january&.dsagricola}".html_safe %>
+                  </div>
+                </div>
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    Delega Tesoro
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    <%= "#{@from_previous_year_january&.delegatesoro}".html_safe %>
+                  </div>
+                </div>
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    Concomitante
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    <%= "#{@from_previous_year_january&.concomitante}".html_safe %>
+                  </div>
+                </div>
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    Concomitante SPI Anno
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    <%= "#{@from_previous_year_january&.concomitantespianno}".html_safe %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <p class="text-info text-center mb-2 fs-5 fw-bold">
+              Anno:&emsp;
+              <%= "#{Date.today.year}".html_safe %>
+            </p>
+            <div class="divTable pt-1">
+              <div class="divTableBody">
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    Ordinaria
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    <%= "#{@from_current_year_january&.ordinaria}".html_safe %>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    <%= growth_degrowth_subscription_type("january", :ordinaria) %>
+                  </div>
+                </div>
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    Ordinaria Cassa Edile
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    <%= "#{@from_current_year_january&.ordinariace}".html_safe %>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    <%= growth_degrowth_subscription_type("january", :ordinariace) %>
+                  </div>
+                </div>
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    NASPI
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    <%= "#{@from_current_year_january&.naspi}".html_safe %>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    <%= growth_degrowth_subscription_type("january", :naspi) %>
+                  </div>
+                </div>
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    DS Agricola
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    <%= "#{@from_current_year_january&.dsagricola}".html_safe %>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    <%= growth_degrowth_subscription_type("january", :dsagricola) %>
+                  </div>
+                </div>
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    Delega Tesoro
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    <%= "#{@from_current_year_january&.delegatesoro}".html_safe %>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    <%= growth_degrowth_subscription_type("january", :delegatesoro) %>
+                  </div>
+                </div>
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    Concomitante
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    <%= "#{@from_current_year_january&.concomitante}".html_safe %>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    <%= growth_degrowth_subscription_type("january", :concomitante) %>
+                  </div>
+                </div>
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    Concomitante SPI Anno
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    <%= "#{@from_current_year_january&.concomitantespianno}".html_safe %>
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    <%= growth_degrowth_subscription_type("january", :concomitantespianno) %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12">
+            <% chart_data = [
+  ["Ordinaria", chartkick_growth_degrowth_subscription_type("january", :ordinaria)], 
+  ["Ordinaria Cassa Edile", chartkick_growth_degrowth_subscription_type("january", :ordinariace)],
+  ["NASPI", chartkick_growth_degrowth_subscription_type("january", :naspi)],
+  ["DS Agricola", chartkick_growth_degrowth_subscription_type("january", :dsagricola)],
+  ["Delega Tesoro", chartkick_growth_degrowth_subscription_type("january", :delegatesoro)],
+  ["Concomitante", chartkick_growth_degrowth_subscription_type("january", :concomitante)],
+  ["Concomitante SPI Anno", chartkick_growth_degrowth_subscription_type("january", :concomitantespianno)]
+] %>
+            <% label_colors = chart_data.map { |_, v| v < 0 ? "red" : "green" } %>
+            <%= bar_chart chart_data, 
+  colors: ["#adb5bd", "#adb5bd"], 
+  curve: false,
+  library: { 
+    plugins: { 
+      datalabels: { 
+        display: true, 
+        color: label_colors,  # Dynamically set colors for labels
+        font: { weight: "bold", size: 14 },
+        anchor: "end",
+        align: "right",
+        offset: 6
+      } 
+    },
+    elements: { 
+      point: { 
+        radius: 4, 
+        backgroundColor: label_colors,  # Make points match label colors
+        borderColor: label_colors, 
+        borderWidth: 2 
+      } 
+    } 
+  } 
+%>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

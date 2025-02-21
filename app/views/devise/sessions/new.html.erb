@@ -15,20 +15,20 @@
           <span class="input-group-text input-group-text-fixed bg-primary text-white">
             <i class="fa-solid fa-user"></i>
             &nbsp;&nbsp;
-            <%= f.label :username %>
+            <%= f.label :username, class: "fs-5" %>
           </span>
-          <%= f.text_field :username, class: 'form-control' %>
+          <%= f.text_field :username, class: 'form-control fs-5' %>
         </div>
         <div class="input-group mb-1">
           <span class="input-group-text input-group-text-fixed bg-primary text-white">
             <i class="fa-solid fa-key"></i>
             &nbsp;&nbsp;
-            <%= f.label :password %>
+            <%= f.label :password, class:"fs-5" %>
           </span>
-          <%= f.password_field :password, class: 'form-control' %>
+          <%= f.password_field :password, class: 'form-control fs-5' %>
         </div>
         <div class="d-grid mt-3">
-          <%= button_tag(type: "submit", class: "btn btn-primary") do %>
+          <%= button_tag(type: "submit", class: "btn btn-primary fs-5") do %>
             <strong>
               <i class="fa-solid fa-floppy-disk"></i>&ensp;ACCEDI
             </strong>

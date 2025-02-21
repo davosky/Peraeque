@@ -1,0 +1,157 @@
+<div class="row mt-2">
+  <div class="col-12">
+    <div class="card bg-white border-secondary shadow">
+      <div class="card-body bg-white border-white shadow-none">
+        <span class="text-primary fs-6 fw-bolder fst-italic m-0 p-1">
+          Classi di Et&agrave;
+          <hr class="m-0 p-0" />
+        </span>
+        <div class="row">
+          <div class="col">
+            <span class="text-primary fs-5 fw-bolder">
+              &emsp;
+              <i class="fa-solid fa-venus"></i>
+              Donne
+              &nbsp;
+              <span class="text-info">
+                <%= "#{@from_current_year_january&.women}".html_safe %>
+                &nbsp;
+                <%= age_percentual("january", :women) %>
+              </span>
+            </span>
+            &emsp;
+            <span class="text-primary fs-5 fw-bolder">
+              &emsp;
+              <i class="fa-solid fa-mars"></i>
+              Uomini
+              &nbsp;
+              <span class="text-info">
+                <%= "#{@from_current_year_january&.men}".html_safe %>
+                &nbsp;
+                <%= age_percentual("january", :men) %>
+              </span>
+            </span>
+            <span class="float-end text-primary">
+              <i class="fa-solid fa-calendar-days"></i>
+              &nbsp;
+              Gennaio
+              &nbsp;
+              <%= "#{Date.today.year}".html_safe %>
+              &nbsp;
+            </span>
+            <br/>
+            <div class="divTable pt-2">
+              <div class="divTableBody">
+                <div class="divTableRow">
+                  <div class="divTableCell text-primary fw-bold">
+                    Giovani
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    Trentenni
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    Quarantenni
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    Cinquantenni
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    Sessantenni
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    Settantenni
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    Ottantenni
+                  </div>
+                  <div class="divTableCell text-primary fw-bold">
+                    Highlanders
+                  </div>
+                </div>
+                <div class="divTableRow">
+                  <div class="divTableCell text-info fw-bold">
+                    <%= "#{@from_current_year_january&.young}".html_safe %>
+                    &nbsp;|&nbsp;
+                    <%= age_percentual("january", :young) %>
+                  </div>
+                  <div class="divTableCell text-info fw-bold">
+                    <%= "#{@from_current_year_january&.thirty}".html_safe %>
+                    &nbsp;|&nbsp;
+                    <%= age_percentual("january", :thirty) %>
+                  </div>
+                  <div class="divTableCell text-info fw-bold">
+                    <%= "#{@from_current_year_january&.forty}".html_safe %>
+                    &nbsp;|&nbsp;
+                    <%= age_percentual("january", :forty) %>
+                  </div>
+                  <div class="divTableCell text-info fw-bold">
+                    <%= "#{@from_current_year_january&.fifty}".html_safe %>
+                    &nbsp;|&nbsp;
+                    <%= age_percentual("january", :fifty) %>
+                  </div>
+                  <div class="divTableCell text-info fw-bold">
+                    <%= "#{@from_current_year_january&.sixty}".html_safe %>
+                    &nbsp;|&nbsp;
+                    <%= age_percentual("january", :sixty) %>
+                  </div>
+                  <div class="divTableCell text-info fw-bold">
+                    <%= "#{@from_current_year_january&.seventy}".html_safe %>
+                    &nbsp;|&nbsp;
+                    <%= age_percentual("january", :seventy) %>
+                  </div>
+                  <div class="divTableCell text-info fw-bold">
+                    <%= "#{@from_current_year_january&.eighty}".html_safe %>
+                    &nbsp;|&nbsp;
+                    <%= age_percentual("january", :eighty) %>
+                  </div>
+                  <div class="divTableCell text-info fw-bold">
+                    <%= "#{@from_current_year_january&.highlander}".html_safe %>
+                    &nbsp;|&nbsp;
+                    <%= age_percentual("january", :highlander) %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3 mb-3">
+          <div class="col-12">
+            <% chart_data = [
+  ["Giovani", chart_kick_age_percentual("january", :young)], 
+  ["Trentenni", chart_kick_age_percentual("january", :thirty)],
+  ["Quarantenni", chart_kick_age_percentual("january", :forty)],
+  ["Cinquantenni", chart_kick_age_percentual("january", :fifty)],
+  ["Sessantenni", chart_kick_age_percentual("january", :sixty)],
+  ["Settantenni", chart_kick_age_percentual("january", :seventy)],
+  ["Ottantenni", chart_kick_age_percentual("january", :eighty)],
+  ["Highlanders", chart_kick_age_percentual("january", :highlander)]
+] %>
+            <% label_colors = chart_data.map { |_, v| v < 0 ? "red" : "#287bb5" } %>
+            <%= column_chart chart_data, 
+  colors: ["#adb5bd", "#adb5bd"], 
+  library: { 
+    plugins: { 
+      datalabels: { 
+        display: true, 
+        color: label_colors,  # Dynamically set colors for labels
+        font: { weight: "bold", size: 14 },
+        anchor: "end",
+        align: "top",
+        offset: 6
+      } 
+    },
+    elements: { 
+      bar: { 
+        backgroundColor: label_colors,  # Color bars based on values
+        borderColor: label_colors, 
+        borderWidth: 2
+      } 
+    } 
+  } 
+%>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

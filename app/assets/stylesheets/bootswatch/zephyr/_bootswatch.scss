@@ -4,7 +4,8 @@
 // Variables
 
 * {
-  font-family: "RobotoCondensed-Regular";
+  font-family: "BarlowCondensed-Regular";
+  font-size: 13pt;
 
   a {
     text-decoration: none;
@@ -77,15 +78,12 @@ body {
   --bs-nav-link-padding-x: 0.5rem;
 }
 
-.gradient-custom {
-  /* fallback for old browsers */
-  background: $brown;
+.nav-link {
+  color: $white;
 
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to right, $brown, $light-brown);
-
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, $brown, $light-brown);
+  &:hover {
+    color: $yellow;
+  }
 }
 
 // Buttons
@@ -313,10 +311,6 @@ thead th {
 }
 
 .list-group {
-  box-shadow: $box-shadow;
-}
-
-.card {
   box-shadow: $box-shadow;
 }
 
