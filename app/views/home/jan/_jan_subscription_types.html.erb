@@ -10,16 +10,16 @@
           <div class="col-6 border-end">
             <p class="text-info text-center mb-2 fs-5 fw-bold">
               Anno:&emsp;
-              <%= "#{Date.today.year - 1}".html_safe %>
+              <%= h(Date.today.year - 1) %>
               <br/>
               <span class="text-info">
                 Deleghe:
                 &nbsp;
-                <%= "#{@from_previous_year_january&.delega}".html_safe %>
+                <%= h(@from_previous_year_january&.delega) %>
                 &emsp;
                 <span class="text-warning">
                   BreviManu(dirette):
-                  <%= "#{@from_previous_year_january&.brevimanu}".html_safe %>
+                  <%= h(@from_previous_year_january&.brevimanu) %>
                 </span>
               </span>
             </p>
@@ -44,16 +44,16 @@
           <div class="col-6">
             <p class="text-info text-center mb-2 fs-5 fw-bold">
               Anno:&emsp;
-              <%= "#{Date.today.year}".html_safe %>
+              <%= h(Date.today.year) %>
               <br/>
               <span class="text-info">
                 Deleghe:
                 &nbsp;
-                <%= "#{@from_current_year_january&.delega}".html_safe %>
+                <%= h(@from_current_year_january&.delega) %>
                 &emsp;
                 <span class="text-warning">
                   BreviManu(dirette):
-                  <%= "#{@from_current_year_january&.brevimanu}".html_safe %>
+                  <%= h(@from_current_year_january&.brevimanu) %>
                 </span>
               </span>
             </p>

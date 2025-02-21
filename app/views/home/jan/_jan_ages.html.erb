@@ -14,7 +14,7 @@
               Donne
               &nbsp;
               <span class="text-info">
-                <%= "#{@from_current_year_january&.women}".html_safe %>
+                <%= h(@from_current_year_january&.women) %>
                 &nbsp;
                 <%= age_percentual("january", :women) %>
               </span>
@@ -26,7 +26,7 @@
               Uomini
               &nbsp;
               <span class="text-info">
-                <%= "#{@from_current_year_january&.men}".html_safe %>
+                <%= h(@from_current_year_january&.men) %>
                 &nbsp;
                 <%= age_percentual("january", :men) %>
               </span>
@@ -36,7 +36,7 @@
               &nbsp;
               Gennaio
               &nbsp;
-              <%= "#{Date.today.year}".html_safe %>
+              <%= h(Date.today.year) %>
               &nbsp;
             </span>
             <br/>
@@ -70,42 +70,42 @@
                 </div>
                 <div class="divTableRow">
                   <div class="divTableCell text-info fw-bold">
-                    <%= "#{@from_current_year_january&.young}".html_safe %>
+                    <%= h(@from_current_year_january&.young) %>
                     &nbsp;|&nbsp;
                     <%= age_percentual("january", :young) %>
                   </div>
                   <div class="divTableCell text-info fw-bold">
-                    <%= "#{@from_current_year_january&.thirty}".html_safe %>
+                    <%= h(@from_current_year_january&.thirty) %>
                     &nbsp;|&nbsp;
                     <%= age_percentual("january", :thirty) %>
                   </div>
                   <div class="divTableCell text-info fw-bold">
-                    <%= "#{@from_current_year_january&.forty}".html_safe %>
+                    <%= h(@from_current_year_january&.forty) %>
                     &nbsp;|&nbsp;
                     <%= age_percentual("january", :forty) %>
                   </div>
                   <div class="divTableCell text-info fw-bold">
-                    <%= "#{@from_current_year_january&.fifty}".html_safe %>
+                    <%= h(@from_current_year_january&.fifty) %>
                     &nbsp;|&nbsp;
                     <%= age_percentual("january", :fifty) %>
                   </div>
                   <div class="divTableCell text-info fw-bold">
-                    <%= "#{@from_current_year_january&.sixty}".html_safe %>
+                    <%= h(@from_current_year_january&.sixty) %>
                     &nbsp;|&nbsp;
                     <%= age_percentual("january", :sixty) %>
                   </div>
                   <div class="divTableCell text-info fw-bold">
-                    <%= "#{@from_current_year_january&.seventy}".html_safe %>
+                    <%= h(@from_current_year_january&.seventy) %>
                     &nbsp;|&nbsp;
                     <%= age_percentual("january", :seventy) %>
                   </div>
                   <div class="divTableCell text-info fw-bold">
-                    <%= "#{@from_current_year_january&.eighty}".html_safe %>
+                    <%= h(@from_current_year_january&.eighty) %>
                     &nbsp;|&nbsp;
                     <%= age_percentual("january", :eighty) %>
                   </div>
                   <div class="divTableCell text-info fw-bold">
-                    <%= "#{@from_current_year_january&.highlander}".html_safe %>
+                    <%= h(@from_current_year_january&.highlander) %>
                     &nbsp;|&nbsp;
                     <%= age_percentual("january", :highlander) %>
                   </div>

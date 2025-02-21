@@ -10,7 +10,7 @@
           <div class="col-6 border-end">
             <p class="text-info text-center mb-2 fs-5 fw-bold">
               Anno:&emsp;
-              <%= "#{Date.today.year - 1}".html_safe %>
+              <%= h(Date.today.year - 1) %>
             </p>
             <div class="divTable pt-2">
               <div class="divTableBody">
@@ -19,21 +19,21 @@
                     FILCAMS
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_previous_year_january&.filcams}".html_safe %>
+                      <%= h(@from_previous_year_january&.filcams) %>
                     </span>
                   </div>
                   <div class="divTableCell text-primary fw-bold">
                     FILCTEM
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_previous_year_january&.filctem}".html_safe %>
+                      <%= h(@from_previous_year_january&.filctem) %>
                     </span>
                   </div>
                   <div class="divTableCell text-primary fw-bold">
                     FILLEA
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_previous_year_january&.fillea}".html_safe %>
+                      <%= h(@from_previous_year_january&.fillea) %>
                     </span>
                   </div>
                 </div>
@@ -42,21 +42,21 @@
                     FILT
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_previous_year_january&.filt}".html_safe %>
+                      <%= h(@from_previous_year_january&.filt) %>
                     </span>
                   </div>
                   <div class="divTableCell text-primary fw-bold">
                     FIOM
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_previous_year_january&.fiom}".html_safe %>
+                      <%= h(@from_previous_year_january&.fiom) %>
                     </span>
                   </div>
                   <div class="divTableCell text-primary fw-bold">
                     FISAC
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_previous_year_january&.fisac}".html_safe %>
+                      <%= h(@from_previous_year_january&.fisac) %>
                     </span>
                   </div>
                 </div>
@@ -65,21 +65,21 @@
                     FLAI
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_previous_year_january&.flai}".html_safe %>
+                      <%= h(@from_previous_year_january&.flai) %>
                     </span>
                   </div>
                   <div class="divTableCell text-primary fw-bold">
                     FLC
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_previous_year_january&.flc}".html_safe %>
+                      <%= h(@from_previous_year_january&.flc) %>
                     </span>
                   </div>
                   <div class="divTableCell text-primary fw-bold">
                     FP
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_previous_year_january&.fp}".html_safe %>
+                      <%= h(@from_previous_year_january&.fp) %>
                     </span>
                   </div>
                 </div>
@@ -88,21 +88,21 @@
                     NIDIL
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_previous_year_january&.nidil}".html_safe %>
+                      <%= h(@from_previous_year_january&.nidil) %>
                     </span>
                   </div>
                   <div class="divTableCell text-primary fw-bold">
                     SLC
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_previous_year_january&.slc}".html_safe %>
+                      <%= h(@from_previous_year_january&.slc) %>
                     </span>
                   </div>
                   <div class="divTableCell text-primary fw-bold">
                     SPI
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_previous_year_january&.spi}".html_safe %>
+                      <%= h(@from_previous_year_january&.spi) %>
                     </span>
                   </div>
                 </div>
@@ -112,7 +112,7 @@
           <div class="col-6">
             <p class="text-info text-center mb-2 fs-5 fw-bold">
               Anno:&emsp;
-              <%= "#{Date.today.year}".html_safe %>
+              <%= h(Date.today.year) %>
             </p>
             <div class="divTable pt-2">
               <div class="divTableBody">
@@ -121,7 +121,7 @@
                     FILCAMS
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_current_year_january&.filcams}".html_safe %>
+                      <%= h(@from_current_year_january&.filcams) %>
                     </span>
                     &nbsp;
                     <%= growth_degrowth_category("january", :filcams) %>
@@ -130,7 +130,7 @@
                     FILCTEM
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_current_year_january&.filctem}".html_safe %>
+                      <%= h(@from_current_year_january&.filctem) %>
                     </span>
                     &nbsp;
                     <%= growth_degrowth_category("january", :filctem) %>
@@ -139,7 +139,7 @@
                     FILLEA
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_current_year_january&.fillea}".html_safe %>
+                      <%= h(@from_current_year_january&.fillea) %>
                     </span>
                     &nbsp;
                     <%= growth_degrowth_category("january", :fillea) %>
@@ -150,7 +150,7 @@
                     FILT
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_current_year_january&.filt}".html_safe %>
+                      <%= h(@from_current_year_january&.filt) %>
                     </span>
                     &nbsp;
                     <%= growth_degrowth_category("january", :filt) %>
@@ -159,7 +159,7 @@
                     FIOM
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_current_year_january&.fiom}".html_safe %>
+                      <%= h(@from_current_year_january&.fiom) %>
                     </span>
                     &nbsp;
                     <%= growth_degrowth_category("january", :fiom) %>
@@ -168,7 +168,7 @@
                     FISAC
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_current_year_january&.fisac}".html_safe %>
+                      <%= h(@from_current_year_january&.fisac) %>
                     </span>
                     &nbsp;
                     <%= growth_degrowth_category("january", :fisac) %>
@@ -179,7 +179,7 @@
                     FLAI
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_current_year_january&.flai}".html_safe %>
+                      <%= h(@from_current_year_january&.flai) %>
                     </span>
                     &nbsp;
                     <%= growth_degrowth_category("january", :flai) %>
@@ -188,7 +188,7 @@
                     FLC
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_current_year_january&.flc}".html_safe %>
+                      <%= h(@from_current_year_january&.flc) %>
                     </span>
                     &nbsp;
                     <%= growth_degrowth_category("january", :flc) %>
@@ -197,7 +197,7 @@
                     FP
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_current_year_january&.fp}".html_safe %>
+                      <%= h(@from_current_year_january&.fp) %>
                     </span>
                     &nbsp;
                     <%= growth_degrowth_category("january", :fp) %>
@@ -208,7 +208,7 @@
                     NIDIL
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_current_year_january&.nidil}".html_safe %>
+                      <%= h(@from_current_year_january&.nidil) %>
                     </span>
                     &nbsp;
                     <%= growth_degrowth_category("january", :nidil) %>
@@ -217,7 +217,7 @@
                     SLC
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_current_year_january&.slc}".html_safe %>
+                      <%= h(@from_current_year_january&.slc) %>
                     </span>
                     &nbsp;
                     <%= growth_degrowth_category("january", :slc) %>
@@ -226,7 +226,7 @@
                     SPI
                     &nbsp;
                     <span class="text-info">
-                      <%= "#{@from_current_year_january&.spi}".html_safe %>
+                      <%= h(@from_current_year_january&.spi) %>
                     </span>
                     &nbsp;
                     <%= growth_degrowth_category("january", :spi) %>

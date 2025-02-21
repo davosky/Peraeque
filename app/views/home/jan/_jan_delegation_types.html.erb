@@ -10,7 +10,7 @@
           <div class="col-6 border-end">
             <p class="text-info text-center mb-2 fs-5 fw-bold">
               Anno:&emsp;
-              <%= "#{Date.today.year - 1}".html_safe %>
+              <%= h(Date.today.year - 1) %>
             </p>
             <div class="divTable pt-1">
               <div class="divTableBody">
@@ -19,7 +19,7 @@
                     Ordinaria
                   </div>
                   <div class="divTableCell text-primary fw-bold">
-                    <%= "#{@from_previous_year_january&.ordinaria}".html_safe %>
+                    <%= h(@from_previous_year_january&.ordinaria) %>
                   </div>
                 </div>
                 <div class="divTableRow">
@@ -27,7 +27,7 @@
                     Ordinaria Cassa Edile
                   </div>
                   <div class="divTableCell text-primary fw-bold">
-                    <%= "#{@from_previous_year_january&.ordinariace}".html_safe %>
+                    <%= h(@from_previous_year_january&.ordinariace) %>
                   </div>
                 </div>
                 <div class="divTableRow">
@@ -35,7 +35,7 @@
                     NASPI
                   </div>
                   <div class="divTableCell text-primary fw-bold">
-                    <%= "#{@from_previous_year_january&.naspi}".html_safe %>
+                    <%= h(@from_previous_year_january&.naspi) %>
                   </div>
                 </div>
                 <div class="divTableRow">
@@ -43,7 +43,7 @@
                     DS Agricola
                   </div>
                   <div class="divTableCell text-primary fw-bold">
-                    <%= "#{@from_previous_year_january&.dsagricola}".html_safe %>
+                    <%= h(@from_previous_year_january&.dsagricola) %>
                   </div>
                 </div>
                 <div class="divTableRow">
@@ -51,7 +51,7 @@
                     Delega Tesoro
                   </div>
                   <div class="divTableCell text-primary fw-bold">
-                    <%= "#{@from_previous_year_january&.delegatesoro}".html_safe %>
+                    <%= h(@from_previous_year_january&.delegatesoro) %>
                   </div>
                 </div>
                 <div class="divTableRow">
@@ -59,7 +59,7 @@
                     Concomitante
                   </div>
                   <div class="divTableCell text-primary fw-bold">
-                    <%= "#{@from_previous_year_january&.concomitante}".html_safe %>
+                    <%= h(@from_previous_year_january&.concomitante) %>
                   </div>
                 </div>
                 <div class="divTableRow">
@@ -67,7 +67,7 @@
                     Concomitante SPI Anno
                   </div>
                   <div class="divTableCell text-primary fw-bold">
-                    <%= "#{@from_previous_year_january&.concomitantespianno}".html_safe %>
+                    <%= h(@from_previous_year_january&.concomitantespianno) %>
                   </div>
                 </div>
               </div>
@@ -76,7 +76,7 @@
           <div class="col-6">
             <p class="text-info text-center mb-2 fs-5 fw-bold">
               Anno:&emsp;
-              <%= "#{Date.today.year}".html_safe %>
+              <%= h(Date.today.year) %>
             </p>
             <div class="divTable pt-1">
               <div class="divTableBody">
@@ -85,7 +85,7 @@
                     Ordinaria
                   </div>
                   <div class="divTableCell text-primary fw-bold">
-                    <%= "#{@from_current_year_january&.ordinaria}".html_safe %>
+                    <%= h(@from_current_year_january&.ordinaria) %>
                   </div>
                   <div class="divTableCell text-primary fw-bold">
                     <%= growth_degrowth_subscription_type("january", :ordinaria) %>
@@ -96,7 +96,7 @@
                     Ordinaria Cassa Edile
                   </div>
                   <div class="divTableCell text-primary fw-bold">
-                    <%= "#{@from_current_year_january&.ordinariace}".html_safe %>
+                    <%= h(@from_current_year_january&.ordinariace) %>
                   </div>
                   <div class="divTableCell text-primary fw-bold">
                     <%= growth_degrowth_subscription_type("january", :ordinariace) %>
@@ -107,7 +107,7 @@
                     NASPI
                   </div>
                   <div class="divTableCell text-primary fw-bold">
-                    <%= "#{@from_current_year_january&.naspi}".html_safe %>
+                    <%= h(@from_current_year_january&.naspi) %>
                   </div>
                   <div class="divTableCell text-primary fw-bold">
                     <%= growth_degrowth_subscription_type("january", :naspi) %>
@@ -118,7 +118,7 @@
                     DS Agricola
                   </div>
                   <div class="divTableCell text-primary fw-bold">
-                    <%= "#{@from_current_year_january&.dsagricola}".html_safe %>
+                    <%= h(@from_current_year_january&.dsagricola) %>
                   </div>
                   <div class="divTableCell text-primary fw-bold">
                     <%= growth_degrowth_subscription_type("january", :dsagricola) %>
@@ -129,7 +129,7 @@
                     Delega Tesoro
                   </div>
                   <div class="divTableCell text-primary fw-bold">
-                    <%= "#{@from_current_year_january&.delegatesoro}".html_safe %>
+                    <%= h(@from_current_year_january&.delegatesoro) %>
                   </div>
                   <div class="divTableCell text-primary fw-bold">
                     <%= growth_degrowth_subscription_type("january", :delegatesoro) %>
@@ -140,7 +140,7 @@
                     Concomitante
                   </div>
                   <div class="divTableCell text-primary fw-bold">
-                    <%= "#{@from_current_year_january&.concomitante}".html_safe %>
+                    <%= h(@from_current_year_january&.concomitante) %>
                   </div>
                   <div class="divTableCell text-primary fw-bold">
                     <%= growth_degrowth_subscription_type("january", :concomitante) %>
@@ -151,7 +151,7 @@
                     Concomitante SPI Anno
                   </div>
                   <div class="divTableCell text-primary fw-bold">
-                    <%= "#{@from_current_year_january&.concomitantespianno}".html_safe %>
+                    <%= h(@from_current_year_january&.concomitantespianno) %>
                   </div>
                   <div class="divTableCell text-primary fw-bold">
                     <%= growth_degrowth_subscription_type("january", :concomitantespianno) %>

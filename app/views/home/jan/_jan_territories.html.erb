@@ -10,7 +10,7 @@
           <div class="col-6 border-end">
             <p class="text-info text-center mb-2 fs-5 fw-bold">
               Anno:&emsp;
-              <%= "#{Date.today.year - 1}".html_safe %>
+              <%= h(Date.today.year - 1) %>
             </p>
             <ul class="list-group list-group-horizontal bg-white shadow-none">
               <li class="list-group-item border-white text-center">
@@ -21,7 +21,7 @@
                   <i class="fa-solid fa-users"></i>
                 </span>
                 <span class="text-info fs-5 fw-bolder">
-                  <%= "#{@from_previous_year_january&.gorizia}".html_safe %>
+                  <%= h(@from_previous_year_january&.gorizia) %>
                 </span>
                 <br/>
                 &emsp;
@@ -34,7 +34,7 @@
                   <i class="fa-solid fa-users"></i>
                 </span>
                 <span class="text-info fs-5 fw-bolder">
-                  <%= "#{@from_previous_year_january&.pordenone}".html_safe %>
+                  <%= h(@from_previous_year_january&.pordenone) %>
                 </span>
                 <br/>
                 &emsp;
@@ -47,7 +47,7 @@
                   <i class="fa-solid fa-users"></i>
                 </span>
                 <span class="text-info fs-5 fw-bolder">
-                  <%= "#{@from_previous_year_january&.trieste}".html_safe %>
+                  <%= h(@from_previous_year_january&.trieste) %>
                 </span>
                 <br/>
                 &emsp;
@@ -60,7 +60,7 @@
                   <i class="fa-solid fa-users"></i>
                 </span>
                 <span class="text-info fs-5 fw-bolder">
-                  <%= "#{@from_previous_year_january&.udine}".html_safe %>
+                  <%= h(@from_previous_year_january&.udine) %>
                 </span>
                 <br/>
                 &emsp;
@@ -70,7 +70,7 @@
           <div class="col-6">
             <p class="text-info text-center mb-2 fs-5 fw-bold">
               Anno:&emsp;
-              <%= "#{Date.today.year}".html_safe %>
+              <%= h(Date.today.year) %>
             </p>
             <ul class="list-group list-group-horizontal bg-white shadow-none">
               <li class="list-group-item border-white text-center">
@@ -81,7 +81,7 @@
                   <i class="fa-solid fa-users"></i>
                 </span>
                 <span class="text-info fs-5 fw-bolder">
-                  <%= "#{@from_current_year_january&.gorizia}".html_safe %>
+                  <%= h(@from_current_year_january&.gorizia) %>
                 </span>
                 <br/>
                 <%= growth_degrowth_territory("january", :gorizia) %>
@@ -94,7 +94,7 @@
                   <i class="fa-solid fa-users"></i>
                 </span>
                 <span class="text-info fs-5 fw-bolder">
-                  <%= "#{@from_current_year_january&.pordenone}".html_safe %>
+                  <%= h(@from_current_year_january&.pordenone) %>
                 </span>
                 <br/>
                 <%= growth_degrowth_territory("january", :pordenone) %>
@@ -107,7 +107,7 @@
                   <i class="fa-solid fa-users"></i>
                 </span>
                 <span class="text-info fs-5 fw-bolder">
-                  <%= "#{@from_current_year_january&.trieste}".html_safe %>
+                  <%= h(@from_current_year_january&.trieste) %>
                 </span>
                 <br/>
                 <%= growth_degrowth_territory("january", :trieste) %>
@@ -120,7 +120,7 @@
                   <i class="fa-solid fa-users"></i>
                 </span>
                 <span class="text-info fs-5 fw-bolder">
-                  <%= "#{@from_current_year_january&.udine}".html_safe %>
+                  <%= h(@from_current_year_january&.udine) %>
                 </span>
                 <br/>
                 <%= growth_degrowth_territory("january", :udine) %>

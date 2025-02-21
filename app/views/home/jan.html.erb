@@ -15,24 +15,24 @@
         Totale Iscritti Regionale:
         &emsp;&emsp;
         <i class="fa-solid fa-calendar-days"></i>
-        <%= "#{Date.today.year - 1}".html_safe %>
+        <%= h(Date.today.year - 1) %>
         &nbsp;
         <i class="fa-solid fa-users"></i>
       </span>
       <span class="text-info fs-4 fw-bolder">
-        <%= "#{@from_previous_year_january&.regional}".html_safe %>
+        <%= h(@from_previous_year_january&.regional) %>
       </span>
       &emsp;
       <i class="fa-solid fa-arrows-left-right text-primary"></i>
       &emsp;
       <span class="text-primary">
         <i class="fa-solid fa-calendar-days"></i>
-        <%= "#{Date.today.year}".html_safe %>
+        <%= h(Date.today.year) %>
         &nbsp;
         <i class="fa-solid fa-users"></i>
       </span>
       <span class="text-info fs-4 fw-bolder">
-        <%= "#{@from_current_year_january&.regional}".html_safe %>
+        <%= h(@from_current_year_january&.regional) %>
       </span>
       &nbsp;
       <%= growth_degrowth("january") %>
