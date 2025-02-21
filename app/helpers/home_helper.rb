@@ -25,7 +25,7 @@ module HomeHelper
     end
   end
 
-  #Returns the value of the members per category from the comparison between the previous year and the current one per month
+  # Returns the value of the members per category from the comparison between the previous year and the current one per month
   def growth_degrowth_category(month, category)
     pre_value = instance_variable_get("@from_previous_year_#{month}").send(category).to_f
     cur_value = instance_variable_get("@from_current_year_#{month}").send(category).to_f
@@ -38,7 +38,7 @@ module HomeHelper
     end
   end
 
-  #Returns the value of the members per age range from the current year per month
+  # Returns the value of the members per age range from the current year per month
   def age_percentual(month, age_range)
     cur_ran = instance_variable_get("@from_current_year_#{month}").send(age_range).to_f
     cur_tot = instance_variable_get("@from_previous_year_#{month}").regional.to_f
@@ -47,14 +47,14 @@ module HomeHelper
     "<span class='text-info'>#{percentual.round(2)}%</span>".html_safe
   end
 
-  #Returns the value of the members per age range from the current year per month to put on chartkick chart
+  # Returns the value of the members per age range from the current year per month to put on chartkick chart
   def chart_kick_age_percentual(month, age_range)
     cur_ran = instance_variable_get("@from_current_year_#{month}").send(age_range).to_f
     cur_tot = instance_variable_get("@from_previous_year_#{month}").regional.to_f
     percentual = ((cur_ran / cur_tot) * 100).round(2)
   end
 
-  #Returns the value of the subscription types from the giving year per month to put on chartkick chart
+  # Returns the value of the subscription types from the giving year per month to put on chartkick chart
   def chart_kick_subscription_type_percentual(year, month, subscription_type)
     par_sub = instance_variable_get("@from_#{year}_year_#{month}").send(subscription_type).to_f
     tot_sub = instance_variable_get("@from_#{year}_year_#{month}").regional.to_f
